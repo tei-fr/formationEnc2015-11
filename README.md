@@ -10,11 +10,11 @@ Attention ! ce répertoire contient des sous-modules
 
 ## Organisation du répertoire
 
-`presentations/` présentations au format HTML
-`exemples/` exemples tei
-`images/` contenus graphiques
-`ressources/` matériel d’accompagnement
-`schemas/` schémas distribués pour la formation
-`exercices/` contient les dossiers de travaux pratiques
-`sources/` sources tei des présentations (contient un sous-module schema/)
-`xsl/` transformations xslt
+- `presentations/` présentations au format HTML
+- `exemples/` exemples tei
+- `images/` contenus graphiques
+- `ressources/` matériel d’accompagnement
+- `schemas/` schémas distribués pour la formation
+- `exercices/` contient les dossiers de travaux pratiques
+- `sources/` sources tei des présentations (contient un sous-module schema/)
+- `xsl/` transformations xslt
