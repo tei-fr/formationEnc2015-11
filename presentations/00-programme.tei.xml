@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_bare.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_bare.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+            <div>
+                <head>Programme</head>
+                <p>Remarques : Lou à Oxford le 17.</p>
+                <list>
+                    <item>
+                        <label>1ère journée de mise à niveau</label>
+                        <list>
+                            <item>Qu’est-ce que modéliser ? Pourquoi modéliser ou fournir un schéma ?</item>
+                            <item>L’organisation de la TEI (Guidelines, spécification techines, modules et classes)</item>
+                            <item>Identifier les lacunes (faire un jeu ?, twitter les lacunes pour permettre à Lou de participer !)</item>
+                        </list>
+                    </item>
+                    <item>
+                        <label>2ème journée : ODD</label>
+                        <list>
+                            <item>De quoi a-t-on besoin ?</item>
+                            <item>Mon premier schéma ODD</item>
+                            <item>... reprendre formation 1 jour</item>
+                        </list>
+                    </item>
+                    <item>
+                        <label>3ème journée : votre customisation de la formation</label>
+                        <list>
+                            <item>Présentation de modules</item>
+                            <item>Création de leurs schémas</item>
+                            <item>Travail sur les cas (répéter l’exercice analyse)</item>
+                        </list>
+                    </item>
+                    <item>
+                        <label>4ème journée : ODD avec style et en consience</label>
+                        <list>
+                            <item>Travail sur les projets</item>
+                            <item>ODD avec style</item>
+                            <item>Comment fournir des exemples</item>
+                            <item>Comment organiser son fichier ODD</item>
+                            <item>Pure ODD</item>
+                            <item>Take away : perennisation</item>
+                        </list>
+                    </item>
+                </list>
+                <div>
+                    <p>La première journée est destinée à une mise à niveau et à l’identification des besoins des participants. Prévoir une certaine flexibilité dans le programme. Lister les choses disponibles et renforcer certains topos. La partie sur les schémas étant obligée dans le parcours.</p>
+                    <p>Programme modélisation avec la TEI, mais pour faire cela il faut que l’une des étapes sur le chemin de l’éveil de la TEI consiste à comprendre tout ce qu’il y a dans la TEI pour faire un bon choix. Avoir un expert qui dise que dans le TEI il existe tel ou tel chose, les participants qui doivent devenir les experts. Leur demander où sentent qu’îl y a des lacunes dans leurs connaissances par rapport à leurs besoins.</p>
+                </div>
+                <div>
+                    <p>Réserver la question des groupes en fonction du public</p>
+                    <p>Préparer des questions à adresser aux personnes au préalable</p>
+                </div>
+                <div>
+                    <p>Quelle place accorder à Schematron ?</p>
+                    <p>Ne serait-il pas intéressant de travailler sur le "processing model"</p>
+                    <p>Comment aborder la question de la pérennisation de la TEI ?</p>
+                </div>
+            </div>
+      </body>
+  </text>
+</TEI>
