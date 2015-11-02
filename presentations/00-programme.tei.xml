@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_bare.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_bare.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
@@ -29,6 +26,9 @@
                             <item>L’organisation de la TEI (Guidelines, spécification techniques,
                                 modules et classes)</item>
                             <item>Identifier les lacunes (faire un jeu ?, twitter les lacunes pour permettre à Lou de participer !)</item>
+                            <note>Objectifs : Mettre à niveau les participants sur la connaissance
+                                de l’organisation des Guidelines et l’objectif d’une modélisation à
+                                l'aide d’un schéma.</note>
                         </list>
                     </item>
                     <item>
@@ -36,15 +36,33 @@
                         <list>
                             <item>De quoi a-t-on besoin ?</item>
                             <item>Mon premier schéma ODD</item>
-                            <item>... reprendre formation 1 jour</item>
+                            <item>... reprendre formation 1 jour :<list>
+                                    <item>Création d’un schéma simple (non ODD)</item>
+                                    <item>Complexifier</item>
+                                    <item>Création d’un ODD</item>
+                                </list></item>
+                            <item>Pure ODD</item>
+                            <note>Objectifs : Connaître les principes d’un langage de spécification
+                                de schéma et apprendre les bases de la syntaxe ODD. Avoir vu la
+                                manière dont la TEI utilise ODD.</note>
                         </list>
                     </item>
                     <item>
                         <label>3ème journée : votre customisation de la formation</label>
                         <list>
-                            <item>Présentation de modules</item>
-                            <item>Création de leurs schémas</item>
+                            <item>Présentation de modules (survol sur tout ce qui est disponible, il
+                                y a probablement tt ce qu’il faut)</item>
+                            <item>Création de leurs schémas (exercice d’analyse sur leur propre
+                                texte = travail en binôme ou en groupe)</item>
                             <item>Travail sur les cas (répéter l’exercice analyse)</item>
+                            <item>Créer un premier ODD avec Roma</item>
+                            <note>Objectifs : Identifier ce qui est déjà dans la TEI, et modéliser
+                                sa source. Arriver à une liste des éléments nécessaires pour son
+                                schéma, identification des éléments disponibles et des lacunes
+                                éventuelles de la TEI. Sélectionner les éléments utiles pour son
+                                projet dans Roma. = un premier schéma personnalisé pour son projet
+                                (TEI subset). Analyser le ODD et repérer sa syntaxe, comprendre son
+                                implication.</note>
                         </list>
                     </item>
                     <item>
@@ -54,10 +72,14 @@
                             <item>ODD avec style</item>
                             <item>Comment fournir des exemples</item>
                             <item>Comment organiser son fichier ODD</item>
-                            <item>Pure ODD</item>
                             <item>Take away : perennisation</item>
-                        </list>
-                    </item>
+                            <note>Objectifs : Identifier ce qui est déjà dans la TEI, et modéliser
+                                sa source. Arriver à une liste des éléments nécessaires pour son
+                                schéma, identification des éléments disponibles et des lacunes
+                                éventuelles de la TEI. Comprendre l’intérêt du schéma pour assurer
+                                la pérennisation de ses sources. Identifier la manière dont peut
+                                contribuer à la TEI (exemples groupe).</note>
+                        </list></item>
                 </list>
                 <div>
                     <p>La première journée est destinée à une mise à niveau et à l’identification des besoins des participants. Prévoir une certaine flexibilité dans le programme. Lister les choses disponibles et renforcer certains topos. La partie sur les schémas étant obligée dans le parcours.</p>
@@ -71,6 +93,44 @@
                     <p>Quelle place accorder à Schematron ?</p>
                     <p>Ne serait-il pas intéressant de travailler sur le "processing model"</p>
                     <p>Comment aborder la question de la pérennisation de la TEI ?</p>
+                    <p/>
+                    <p>Demander aux participants d’apporter <list>
+                            <item>exemples de balisage (si existe)</item>
+                            <item>exemples de documents sources (au moins une page)</item>
+                            <item>identification des objectifs de leur projet</item>
+                        </list></p>
+                </div>
+                <div>
+                    <p>Comment traiter les attributs en ODD. Passage en revue des éléments et
+                        attributs.</p>
+                    <p>À partir du troisième jour, faire travailler les gens sur leurs propres
+                        projets en binôme et intercaler les séances de travail de reprises et de
+                        focus sur plusieurs thématiques :<list>
+                            <item>Comment organiser son fichier ODD (Organisation du fichier +
+                                manuel)</item>
+                            <item>Comment traiter les attributs</item>
+                            <item>Les trois manières de sélectionner des éléments</item>
+                            <item>Comment nourrir les exemples</item>
+                            <item>Comment créer nouvel élément (comment prendre en charge une
+                                licorne)</item>
+                            <item>Schematron</item>
+                        </list></p>
+                    <p>Pour chaque journée, définir les objectifs de la formation.</p>
+                    <div>
+                        <p>Take away : besoin de savoir dans 10 ans pourquoi a fait tel ou tel chose
+                            dans son encodage. Une discipline qui consiste à bien expliquer les
+                            motivations et contraintes comprises dans l’encodage et pas autrement
+                            spécifiable.</p>
+                        <p>Parler du projet de pérennisation</p>
+                        <p>CINES, archivage long terme, OAIS</p>
+                        <p>Passer d’un modèle à l’autre</p>
+                        <p>Partager sa modélisation. Projet de la TEI : TAPAS, partage d’exemple
+                            d’encodage.</p>
+                        <p>Infrastructure TEI : mailing list, Github, liste de discution, SIG, Wiki.
+                            cf. Welcome to the TEI communauty.</p>
+                        <p>Dans chq release de la TEI, un dossier d’exemplaires sélectionnés pour
+                            des raisons particulières par le council.</p>
+                    </div>
                 </div>
             </div>
       </body>
