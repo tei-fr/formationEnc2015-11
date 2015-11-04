@@ -99,6 +99,13 @@
                             <item>exemples de documents sources (au moins une page)</item>
                             <item>identification des objectifs de leur projet</item>
                         </list></p>
+                    <p>Réservation hôtel (proche si possible, sinon peut faire une proposition,
+                        demander budget)</p>
+                    <p>Prévoir remboursement pour le billet (car préfère prendre le billet
+                        lui-même).</p>
+                    <p>Doit rester 17 au 20 = 4 nuits d’hôtel. </p>
+                    <p>1 au 4 impossible car Grenoble le 3. Possible de reste le we et faire le 7,
+                        8, 9. Lauranne ne peut pas.</p>
                 </div>
                 <div>
                     <p>Comment traiter les attributs en ODD. Passage en revue des éléments et
@@ -129,7 +136,10 @@
                         <p>Infrastructure TEI : mailing list, Github, liste de discution, SIG, Wiki.
                             cf. Welcome to the TEI communauty.</p>
                         <p>Dans chq release de la TEI, un dossier d’exemplaires sélectionnés pour
-                            des raisons particulières par le council.</p>
+                            des raisons particulières par le council avec leur ODD. Chaque nouvelle
+                            release des guidelines, va contrôler que les exemples continuent de
+                            fonctionner de la même manière pour assurer rétrocompatibilité. Comment
+                            persuader le TEI council de mettre son ODD ici ?</p>
                     </div>
                 </div>
             </div>
