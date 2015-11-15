@@ -4,7 +4,7 @@ Répertoire de travail de la formation de l’École nationale des chartes des 1
 ## Cloner le répertoire
 
 ```bash
-  git clone --recursive https://github.com/tei-fr/formationEnc2015-05.git # cloner le répertoire en mettant à jour les sous-modules
+  git clone --recursive https://github.com/tei-fr/formationEnc2015-11.git # cloner le répertoire en mettant à jour les sous-modules
 ```
 Attention ! ce répertoire contient des sous-modules
 
