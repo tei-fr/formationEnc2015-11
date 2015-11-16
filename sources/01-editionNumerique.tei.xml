@@ -114,7 +114,7 @@
                   </list></quote>
                 <bibl>Bourgain, Pascale, et Vielliard, Françoise, Conseils pour l’édition des textes
                   médiévaux, Paris, Comité des travaux historiques et scientifiques / École
-                  nationale des chartes, 2002, (Documents d'archives, n° Fascicule III, Textes
+                  nationale des chartes, 2002, (Documents d’archives, n° Fascicule III, Textes
                   littéraires).</bibl>
               </cit></p>
           </div>
@@ -153,7 +153,7 @@
                 ne doit en aucun cas moderniser la graphie) et, d’autre part, le souci de le rendre
                 aussi intelligible que possible pour un lecteur d’aujourd’hui.</quote>
               <bibl>Barbiche, Bernard, Châtenet, Monique, Delmas, Jean, Guyotjeannin, Olivier, et
-                Belhoste, Jean-François, L'Édition des textes anciens : XVI<hi rend="superscript"
+                Belhoste, Jean-François, L’Édition des textes anciens : XVI<hi rend="superscript"
                   >e</hi>-XVIII<hi rend="superscript">e</hi> siècle, Paris, Association Études,
                 loisirs, patrimoine, 1993, (Documents &amp; méthodes / Inventaire général des
                 monuments et des richesses artistiques de la France, n° 1).</bibl>
@@ -288,7 +288,7 @@
             <p>Identifier explicitement la structure sémantique sous-jacente d’un document,
               indépendamment de tout traitement déterminé à l’avance.</p>
             <list>
-              <item>Distinguer à l'intérieur du texte différents objets éditoriaux</item>
+              <item>Distinguer à l’intérieur du texte différents objets éditoriaux</item>
               <item>Fournir une information sémantique</item>
               <item>Possibilité de produire des vues distinctes</item>
             </list>
@@ -316,7 +316,7 @@
             <list>
               <item>Reconnaissance des éléments</item>
               <item>Sélection des balises</item>
-              <item>Réalisation du balisage, marquage de l'élément</item>
+              <item>Réalisation du balisage, marquage de l’élément</item>
             </list>
           </div>
           <div rend="notes">
@@ -330,7 +330,7 @@
               <label>la sélection des balises,</label>
               <item>déterminer le balisage qui s’applique au type d’élément reconnu</item>
               <label>la réalisation du balisage,</label>
-              <item>marquage de l’élément à l'intérieur du flux textuel</item>
+              <item>marquage de l’élément à l’intérieur du flux textuel</item>
             </list>
             <bibl>cf. Coombs, James, et al., <hi rend="italic">op. cit.</hi></bibl>
           </div>
@@ -345,6 +345,7 @@
               <item>structure hiérarchique</item>
               <item>relations linéaires</item>
             </list>
+            <p>Une manière de se représenter ce qu’est un texte</p>
           </div>
           <div rend="notes">
             <head><hi>OHCO</hi>, Ordered Hierarchical Content Objects</head>
@@ -356,6 +357,7 @@
               citations, phrases, notes, etc.) sont présentés à l’intérieur d’une structure
               hiérarchique. La structure du texte est hiérarchique parce qu’ils résident les uns à
               l’intérieur des autres. Les objets reçoivent donc des relations linéaires.</p>
+            <p>C’est ici l’occasion de souligner qu’il s’agit ici d’une modélisation. C’est une manière de représenter ce qu’est un texte qui impose son expressivité et ses contraintes. Nous verrons que la TEI, tout en étant en grande basée sur le balisage descriptif offre différents mécanismes pour prendre en charge des relations non hiérarchiques comme les chevauchements, etc.</p>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
@@ -409,7 +411,7 @@
       <div type="part">
         <div rend="title" xml:lang="fr" xml:id="presentationEdition">
           <div>
-            <head>La présentation de l'édition critique</head>
+            <head>La présentation de l’édition critique</head>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
@@ -518,7 +520,7 @@
                 glossaire des termes architecturaux et juridiques. C’est-à-dire une liste
                 alphabétique des mots difficiles jouant le rôle d’un dictionnaire propre au texte
                 pour favoriser sa compréhension. En dehors des aspects de vulgarisation, un tel
-                glossaire peut aussi assez bien répondre au caractère pluri-disciplinaire d'une
+                glossaire peut aussi assez bien répondre au caractère pluri-disciplinaire d’une
                 édition.</p>
               <p>Plusieurs index peuvent également permettre d’offrir différents types d’accès aux
                 textes. En plus des index patronymiques et toponymiques habituellement requis dans
@@ -684,7 +686,7 @@
           <div>
             <head>Orientations bibliographiques</head>
             <list>
-              <item><bibl>Burnard, Lou, O'Brien O'Keeffe, Katherine et Unsworth, John. <ref
+              <item><bibl>Burnard, Lou, O’Brien O’Keeffe, Katherine et Unsworth, John. <ref
                     target="http://www.tei-c.org/About/Archive_new/ETE/Preview/index.xml">Electronic
                     Textual Editing. Modern Language Association</ref>, 2006.</bibl></item>
               <item><bibl>Schillingsburg, Peter L., <ref
@@ -719,27 +721,26 @@
                       réflexions</ref>
                   </hi>. mars, 2010.</bibl></item>
               <item><bibl>Bourgain, Pascale, and Françoise Vieillard (dir.), <hi rend="italic"
-                    >Conseils Pour L'édition Des Textes Médiévaux</hi>. Conseils généraux, Fascicule
-                  I. Documents d'archives, Fascicule II. Textes littéraires, Fascicule III. Paris:
+                    >Conseils Pour L’édition Des Textes Médiévaux</hi>. Conseils généraux, Fascicule
+                  I. Documents d’archives, Fascicule II. Textes littéraires, Fascicule III. Paris:
                   Comité des travaux historiques et scientifiques / École nationale des chartes,
                   2001-2002.</bibl></item>
               <item><bibl>Barbiche, Bernard. <hi rend="italic"><ref target="http://theleme.enc.sorbonne.fr/cours/edition">"Conseils Pour L’édition Des Textes
                     De L’époque Moderne (XVIe-XVIIIe
                     Siècle)"</ref></hi>epoque<hi
                     rend="italic">moderne/edition</hi>des<hi rend="italic">textes)</hi>. Theleme
-                  (Techniques pour l'Historien en Ligne : Études, Manuels, Exercices).</bibl></item>
+                  (Techniques pour l’Historien en Ligne : Études, Manuels, Exercices).</bibl></item>
               <item><bibl>Christine Nougaret et Elisabeth Parinet (dir.), <hi rend="italic">Conseils
-                    pour l'édition des textes de l'époque moderne</hi>, École nationale des chartes,
+                    pour l’édition des textes de l’époque moderne</hi>, École nationale des chartes,
                     <hi rend="bold">à paraître en décembre 2014 (avec un chapitre de Florence
-                    Clavaud consacré à l'édition électronique) !!</hi>.</bibl></item>
+                    Clavaud consacré à l’édition électronique) !!</hi>.</bibl></item>
             </list>
           </div>
         </div>
       </div>
       <div>
         <div rend="title" xml:lang="fr">
-          <head>XML, <ref target="02-teiMacrostructure.html">Encoder la structure d’un document en
-              TEI</ref></head>
+          <head>XML, <ref target="02-teiGeneralites.html">Et la TEI dans tout ça ?</ref></head>
           <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
               >Programme</ref></note>
         </div>

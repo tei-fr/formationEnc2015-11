@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Programme</title>
+      <link href="themes/remark-dark-em.css" rel="stylesheet" media="all" type="text/css">
+   </head>
+   <body><textarea id="source">
+title: Organisation de la TEI
+description: , 
+theme: theme/remark-dark-em.cssname: inverse
+layout: true
+class: inverse
+
+---
+class: center middle
+
+
+
+# 03-L’organisation de la TEI
+
+## Formation TEI | ENC 17-20 novembre 2015
+
+.footnote[[Répertoire GitHub](https://github.com/tei-fr/formationEnc2015-11)]
+
+.footnote[[Programme](https://github.com/tei-fr/formationEnc2015-11)]
+![test](images/logo-ecole-nationale-des-chartes.png)
+
+## Introduction
+
+???
+
+Comme on l’a vu précédemment, la TEI peut donc se concevoir comme un cadre de travail technique, un framework, qui accompagne l’éditeur ou l’encodeur dans la structuration de l’information.
+
+Elle consiste en un ensemble de préconisations qui doivent être adaptées aux spécificités inhérentes à chaque projet éditorial.
+
+* Comme le relève Florence Clavaud, « cette modularité qui garantit la flexibilité du modèle et sa généralité, peut parfois dérouter l’encodeur inexpérimenté ou le confronter à des choix difficiles. » La définition des solutions d’encodage implique d’opérer des choix entre plusieurs solutions admissibles en en saisissant bien tous les tenants et les aboutissants.
+
+* Elle implique un aller-retour continuel entre les sources textuelles à traiter et la documentation de la TEI afin de réévaluer les solutions d’encodage envisagées.
+
+Ce besoin de personnalisation s’explique, d’une part parce que le texte est souvent un objet hétérogène, et d’autre part car l’encodeur ou l’éditeur peut avoir des objectifs différents.
+
+* Dans le cas d’un texte dramatique, il pourra se révéler nécessaire de trouver un moyen pour marquer les locuteurs.
+
+* Les éléments nécessaires pour traiter le discours oral ne seront sans doute pas les mêmes que ceux requis pour le traitement diplomatique.
+
+* On n’abordera pas un ensemble de textes composites ou un corpus de la même manière que des textes isolés.
+
+Ces différents cas de figure expliquent assez bien le besoin de métadonnées spécialisées pour décrire les contenus.
+
+Ce que propose la TEI c’est un ensemble de mécanismes pour les traiter. «&nbsp;Formellement parlant, les Guidelines fournissent à la fois des règles syntactiques sur la manière dont des éléments et des attributs doivent être utilisés dans des documents valides, mais aussi des recommandations sémantiques sur l’interprétation que l’on doit attacher à certaines constructions syntactiques. En ce sens, elle fournissent à la fois une définition de type de document, et une déclaration de type de document. Plus exactement, on peut distinguer le modèle abstrait de la TEI (TEI Abstract Model) qui définit un ensemble de concepts en rapport, et le schéma TEI (TEI schema) qui définit un ensemble de règles et de contraintes syntactiques. »
+- cf. Sperberg-McQueen, C. Michael, Burnard, Lou, et Bauman, Syd, [TEI P5 : Guidelines for Electronic Text Encoding and Interchange](http://www.tei-c.org/Guidelines/P5/), 23.3.
+---
+
+
+## Un projet «&nbsp;open source&nbsp;»
+
+* Les Guidelines et du code sont maintenues sur [Sourceforge](http://sourceforge.net/projects/tei/)
+
+* Un projet collaboratif appuyé sur un entrepôt Git
+
+* Discussion des problèmes rencontrés, suggestions de modifications sur les listes et le gestionnaire de bugs
+
+???
+
+En plus d’être une communauté, comme vous le savez déjà, la TEI propose également une infrastructure pour l’encodage de textes. L’ensemble du code informatique du projet est mis à disposition par l’intermédiaire d’un gestionnaire de version.
+
+### Un projet «&nbsp;open source&nbsp;»
+
+* Les Guidelines et du code sont maintenues sur [Sourceforge](http://sourceforge.net/projects/tei/)
+
+* Un projet collaboratif appuyé sur un entrepôt Git
+
+* Discussion des problèmes rencontrés, suggestions de modifications sur les listes et le gestionnaire de bugs
+
+---
+
+
+## Distinguez
+
+### Le modèle abstrait de données
+
+* qui définit un ensemble de concepts et de relations entre ces concepts
+
+* qui permet d’exprimer des définitions formelles (modèles de contenus)
+
+### Implémentations techniques du modèle
+
+* qui définissent l’ensemble des règles et contraintes syntaxiques sous forme de schémas XML ou de DTD
+
+???
+
+Pour bien comprendre ce que propose la TEI, il convient de distinguer le modèle abstrait de données, des implémentations techniques du modèle.
+
+### Modèle abstrait de données
+
+### 
+
+* qui définit un ensemble de concepts et de relations entre ces concepts
+
+* qui permet d’exprimer des définitions formelles (modèles de contenus)
+
+### Implémentations techniques du modèle
+
+* qui définissent l’ensemble des règles et contraintes syntaxiques sous forme de schémas XML ou de DTD
+
+Ces deux composantes .red[forment ensemble les Guidelines].
+
+Ces Guidelines expriment sous forment littérale [Donald Knuth](http://www.literateprogramming.com) le modèle abstrait de données, et propose des implémentations techniques du modèle.
+
+Si la conception de la TEI découle en grande partie des technologies XML, et que son infrastructure repose principalement sur ces technologies, la TEI pourrait tout aussi bien être exprimée par l’intermédiaire d’un autre véhicule si un nouveau formalisme technique devait s’imposer à l’avenir. 
+
+---
+
+
+## Un cadre de travail flexible et modulaire
+
+* [22 modules](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ST.html#STMA) 
+* Classement des 555 éléments de la TEI par domaines d’application
+
+* Chaque module fait l’objet d’un chapitre de la documentation
+
+
+* [Classes de modèle](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/REF-CLASSES-MODEL.html)
+
+* [Classes d’attribut](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/REF-CLASSES-ATTS.html)
+
+???
+
+Dès l’origine, la TEI a été conçue pour être employée comme un ensemble de briques permettant de construire des schémas spécifiques pour un projet donné.
+
+L’infrastructure de la Proposition numéro 5 de la TEI (P5) consiste en&nbsp;:
+* vingt-deux modules parmi lesquels sont répartis les nombreux éléments de la TEI qui font l’objet d’une importante documentation textuelle
+
+* ils sont formellement classés dans des classes de modèle et d’attributs auxquels on peut faire appel pour spécifier un schéma.
+
+
+[cf. [Personnalisation de la TEI](04-personnalisation.html)
+
+---
+
+
+## Les 22 [modules](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ST.html#STMA) de la TEI
+
+![module](images/modulesTEI.png)
+
+---
+
+
+## Les 22 [modules](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ST.html#STMA) de la TEI
+
+Regroupés par domaine d’application, à chaque module correspond un chapitre des [Guidelines](http://www.tei-c.org/Guidelines/)
+
+Trois modules habituellement requis&nbsp;: 
+* [core](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html) éléments disponibles dans tous les documents TEI
+
+* [header](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html) en-tête TEI
+
+* [textstructure](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html) structure de text par défault
+
+
+&amp; [tei](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ST.html) infrastructure TEI
+
+ex d’autres modules spécialisés&nbsp;: [namesdates](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html) pour les noms et dates, [[transcr](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html) pour la critique textuelle, [msdescription](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html) pour la description de manuscrits, [figure](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/FT.html) facsimili, ...
+
+???
+
+Les modules constituent avant tout un moyen commode de grouper par domaine d’application les nombreux éléments de la TEI (ils sont actuellement au nombre de 555).
+
+Chaque module fait l’objet d’une description littérale dans un chapitre des Guidelines.
+
+Trois de ces modules sont habituellement requis lors de la production d’un schéma (`core`, `header`, et `textstructure`, on utilise également `tei` pour RelaxNG).
+
+Outre ces trois modules, on fait fréquemment appel aux modules suivants `figures`, `namesdates`, `linking`, `transcr`.
+
+* Le module [namesdates](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html) est particulièrement adapté pour la description des entités historiques de type personnes et lieux.
+
+* Le module [figure](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/FT.html) est utilisé conjointement avec `transcr` pour traiter la description des facsimili.
+
+* [transcr](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html) est destiné à la transcription de manuscrit et à la transcription de sources primaires. Y trouvera par exemple des éléments pour signaler un passage rayé, un ajout dans la marge (glose marginale), une abréviation, etc.
+
+* [msdescription](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html) sert à la description de manuscrits. Quand fait une édition de texte, besoin de décrire la source que l’on édite, on y trouver les éléments nécessaires.
+
+* Il est également possible d’utiliser le module `dictionaries` pour le traitement d’un glossaire.
+
+* Module drama pour la transcription du texte oral pas la même chose que texte de base. Composante de temps.
+
+* `textCrit` lorsque l’on a besoin d’encoder un apparat critique, quand étudie un texte qui a plusieurs témoins, plusieurs manuscrits qui constitue plusieurs leçons d’un texte transcrit (variantes) critical aparatus
+
+* `linking` qui concerne le modèle de lien
+
+---
+
+
+## Se repérer sur le site du Consortium
+
+http://www.tei-c.org
+
+* Consortium 
+* Actualités
+
+* Groupes de travail
+
+* Wiki
+
+
+* Guidelines 
+* Consultation des chapitres
+
+* Description des éléments
+
+* Classes
+
+
+???
+
+Un site web très touffu dans lequel on peut parfois se perdre. On peut accéder à la liste des membres. Vous avez également un lien vers le journal de le TEI dans le menu activités.
+
+Vous disposez également d’un WIKI sur la TEI qui est un regroupement de tutoriaux, projets de la TEI. Une liste des projets utilisant la TEI. Il n’est pas obligatoire de déclarer que l’on travaille avec TEI. C’est une démarche libre, puisqu’il s’agit d’un logiciel libre avec lequel on fait ce que l’on veut.
+
+Une partie du WIKI est consacrée aux outils. Si vous deviez démarrer un gros projet, c’est une bonne page pour déterminer les outils existants pour faire l’état de l’art. Mais, si elle constitue un passage obligé, cette page n’est évidemment pas exhaustif.
+
+Les guidelines, mais aussi About avec une rubrique sur l’histoire du projet.
+
+La liste de discussion : il vous suffit de fournir votre nom et votre adresse email pour être abonné.
+
+Détail des guidelines
+
+* Consultation des chapitres
+
+* Navigation par élément
+
+* Consultation des classes
+
+* Outils
+
+Les parties concernant les spécifications formelles des guidelines ont fait l’objet de traduction par le groupe Afnor. Des exemples correspondants à la pratique française ont été introduits.
+
+En revanche le corps principal des guidelines n’existe qu’en une seule langue. Si vous commencez un projet, rien ne vaudra une lecture attentive des chapitres qui vous intéressent. Il s’agit d’une recommandation de base. Ici c’est même un préalable, car si EAD par exemple est souple et facile à comprendre et cerner, TEI l’est beaucoup moins. Pour commencer à travailler avec TEI, la première consigne est de commencer à lire la documentation.
+
+---
+class: center middle
+
+
+## La [suite](04-xxx.html)
+
+.footnote[[Revenir au début](#index) | [Programme](00-programme.html)]
+</textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body>
+</html>
