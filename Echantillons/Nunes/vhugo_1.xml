@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_xinclude.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="autographes.rng" type="application/relax-ng-syntax"?>
+
+<TEI
+        xmlns="http://www.tei-c.org/ns/1.0">
+        <teiHeader>
+                <fileDesc>
+                        <titleStmt>
+                                <title>Lettre autographe de Victor Hugo, 19 décembre 1840</title>
+                                <author>Victor Hugo</author>
+                                <editor>Claire Haquet</editor>
+                                <!--à traiter ds le xslt-->
+
+                                <editor>Eric Nunes</editor>
+
+                        </titleStmt>
+
+                        <publicationStmt>
+                                <publisher>Bibliothèques de Nancy</publisher>
+                                <address>
+                                        <addrLine>Bibliothèque Stanislas</addrLine>
+                                        <addrLine>43 rue Stanislas</addrLine>
+                                        <addrLine>54000 <placeName>Nancy</placeName></addrLine>
+                                </address>
+                                <date
+                                        when="2015">2015</date>
+                                <availability
+                                        status="restricted">
+                                        <licence
+                                                target="https://www.etalab.gouv.fr/licence-ouverte-open-licence">Licence
+                                                ouverte</licence>
+                                        <!--à traiter ds le xslt-->
+                                </availability>
+
+                        </publicationStmt>
+                        <sourceDesc>
+                                <msDesc>
+                                        <msIdentifier>
+                                                <country>France</country>
+                                                <settlement>Nancy</settlement>
+                                                <repository>Bibliothèque municipale de Nancy </repository>
+                                                <collection>Autographes</collection>
+                                                <idno>Dossier "Victor Hugo", n° 1</idno>
+                                        </msIdentifier>
+                                        <msContents>
+                                                <summary>
+                                                  <date
+                                                  when="1840-12-19">19 décembre 1840</date>.
+                                                  <persName>Victor Hugo</persName> remercie
+                                                  <persName>M. Lombard</persName>, de
+                                                  <placeName>Nancy</placeName>, d'une lettre envoyée
+                                                  à l'occasion du retour des cendres de
+                                                  <persName>Napoléon I<hi
+                                                  rend="superscript">er</hi></persName> en
+                                                  <placeName>France</placeName>.</summary>
+                                                <textLang
+                                                  mainLang="fre">français</textLang>
+                                        </msContents>
+                                        <physDesc>
+                                                <objectDesc
+                                                  form="letter">
+                                                  <supportDesc
+                                                  material="paper">
+                                                  <support>Papier</support>
+                                                  <extent>1 feuillet plié en deux.<dimensions
+                                                  scope="all"
+                                                  type="leaf"
+                                                  unit="cm">
+                                                  <height>21,4</height>
+                                                  <width>13,5</width>
+                                                  </dimensions>
+                                                  </extent>
+                                                  <condition>bon état</condition>
+                                                  </supportDesc>
+
+                                                </objectDesc>
+
+                                        </physDesc>
+
+
+                                </msDesc>
+                                <biblStruct>
+                                        <analytic>
+                                                <author>
+                                                  <persName>
+                                                  <surname>Rousseau</surname>
+                                                  <forename>Louis</forename>
+                                                  </persName>
+                                                </author>
+                                                <title
+                                                  level="a">
+                                                  <hi
+                                                  rend="i">La famille lorraine de Victor Hugo</hi>
+                                                </title>
+                                        </analytic>
+                                        <!--voir pour entre guillements-->
+                                        <monogr>
+                                                <title
+                                                  level="m">
+                                                  <hi
+                                                  rend="i">Le Pays lorrain</hi>
+                                                </title>
+                                                <imprint>
+                                                  <pubPlace>Nancy</pubPlace>
+                                                  <date
+                                                  when="1952">1952</date>
+                                                </imprint>
+                                                <biblScope
+                                                  unit="p"
+                                                  from="81"
+                                                  to="90">81-90</biblScope>
+                                        </monogr>
+
+                                </biblStruct>
+                                <biblStruct>
+                                        <monogr>
+                                                <title
+                                                  level="j">
+                                                  <hi
+                                                  rend="i">Annuaire statistique et administratif du
+                                                  département de la Meurthe</hi>
+                                                </title>
+                                                <imprint>
+                                                  <publisher>Grimblot, Thomas et Raybois</publisher>
+                                                  <pubPlace>Nancy</pubPlace>
+                                                  <date>1840</date>
+                                                </imprint>
+                                                <biblScope
+                                                  unit="p">23</biblScope>
+                                        </monogr>
+                                </biblStruct>
+                                <biblStruct>
+                                        <monogr>
+                                                <author>
+                                                  <persName>
+                                                  <surname>Badel</surname>
+                                                  <forename>Emile</forename>
+                                                  </persName>
+                                                </author>
+                                                <title
+                                                  level="m">
+                                                  <hi
+                                                  rend="i">Dictionnaire historique des rues de
+                                                  Nancy</hi>
+                                                </title>
+                                                <imprint>
+                                                  <date>1903-1905</date>
+                                                </imprint>
+                                        </monogr>
+                                </biblStruct>
+                        </sourceDesc>
+
+                </fileDesc>
+
+                <encodingDesc>
+                        <projectDesc>
+                                <p>La lettre de Victor Hugo fait partie d'un ensemble de manuscrits
+                                        littéraires encodés en XML/TEI dans le cadre de l'exposition
+                                        "Place des Manuscrits" (Nancy, Bibliothèques de Nancy,
+                                        péristyle du Musée des Beaux-Arts, 11-13 septembre 2015).
+                                        Elle est le premier élément d'un programme d'édition
+                                        électronique de textes pilotée par les Bibliothèques de
+                                        Nancy.</p>
+                        </projectDesc>
+                </encodingDesc>
+                <profileDesc>
+                        <langUsage>
+                                <language
+                                        ident="fre">français</language>
+                        </langUsage>
+                        <creation>
+                                <date
+                                        when="1840-12-19">19 décembre 1840</date>
+                        </creation>
+                </profileDesc>
+        </teiHeader>
+        <text>
+                <front>
+                        <docTitle>
+
+                                <titlePart>Lettre de Victor Hugo à M. Lombard</titlePart>
+
+                        </docTitle>
+
+                </front>
+
+                <body>
+                        <div
+                                type="images"
+                                facs="../autographes/images/B543956101_HUGO-01.jpg"></div>
+                        <div
+                                type="letter"
+                                xml:lang="fre">
+                                <opener>
+                                        <address>
+                                                <addrLine></addrLine>
+                                        </address>
+                                </opener>
+                                <p>Vous avez bien fait<lb></lb> de m'écrire, <persName
+                                                role="destinataire">Monsieur</persName><ref
+                                                type="note"
+                                                target="#n1"></ref> la<lb></lb><placeName>Lorraine
+                                        </placeName>est pour moi plus<lb></lb> que mon pays, c'est
+                                        le pays<lb></lb>de <persName>mon père</persName><ref
+                                                type="note"
+                                                target="#n2"></ref>. Tout ce que<lb></lb> je tiens
+                                        d'elle m'est doux.<lb></lb>Votre lettre m'a causé
+                                        un<lb></lb> vif plaisir. Remerciez
+                                        <!-- ajouter dans le schema <del>pour </del>
+            <add>en</add>-->
+                                        en <lb></lb> mon nom, je vous prie, les<lb></lb> vieux
+                                        camarades de mon père,<lb></lb> et croyez à mes
+                                        sentiments<lb></lb> plus affectueux et les <lb></lb> plus
+                                        distingués. </p>
+                                <lb></lb>
+                                <p><persName
+                                                role="auteur">Victor Hugo</persName><ref
+                                                type="note"
+                                                target="#n3"></ref>.</p>
+                                <lb></lb>
+                                <p><placeName>Paris</placeName> - <date
+                                                calendar="Gregorian"
+                                                when="1840-12-19">19 <hi
+                                                  rend="sc">X</hi><hi
+                                                  rend="superscript">bre</hi> 1840</date>.</p>
+                        </div>
+                        <div
+                                type="address">
+                                <p>Monsieur<lb></lb>Lombard<lb></lb>rue J. J. Rousseau<ref
+                                                type="note"
+                                                target="#n4"></ref><lb></lb>Nancy</p>
+                               
+                        </div>
+                </body>
+                <back>
+                        <div
+                                type="notes">
+                                <note
+                                        
+                                        xml:id="n1">
+                                        <p>M. Lombard, demeurant à <placeName>Nancy</placeName> rue
+                                                Jean-Jacques Rousseau, aujourd'hui rue des
+                                                Dominicains. Il s'était fait semble-t-il le
+                                                porte-parole des anciens camarades du général Hugo
+                                                pour féliciter son fils à l'occasion du retour des
+                                                cendres de l'Empereur à Paris. Il pourrait être
+                                                  <persName>Pierre-Eugène Lombard</persName>, avoué
+                                                près la cour royale de Nancy.</p>
+                                </note>
+                                <note
+                                        xml:id="n2">
+                                        <p><persName>Joseph-Léopold-Sigisbert Hugo</persName>, est
+                                                né à <placeName>Nancy</placeName> le <date
+                                                  when="1773-11-15"
+                                                  type="birth">15 novembre 1773</date>, d'un père
+                                                menuisier prospère et d'une mère gouvernante des
+                                                enfants de la famille de Rosières d'Euvézin. Il
+                                                s'est engagé à quatorze ans comme simple soldat dans
+                                                les armées révolutionnaires. Ses faits d'armes se
+                                                situent en <placeName>Vendée</placeName>, sur le
+                                                  <placeName>Rhin</placeName>, puis en
+                                                  <placeName>Corse</placeName> et en
+                                                  <placeName>Espagne</placeName> où il conquiert le
+                                                grade de général et gouverneur des provinces
+                                                centrales. Joseph-Léopold-Sigisbert Hugo et sa femme
+                                                  <persName>Sophie Trébuchet</persName> ont vécu à
+                                                  <placeName>Nancy</placeName> en <date
+                                                  when="1800">1800</date> avec leur fils aîné
+                                                  <persName>Abel</persName> jusqu'après la naissance
+                                                  d'<persName>Eugène</persName>, le deuxième. </p>
+                                </note>
+                                <note
+                                        xml:id="n3">
+                                        <p>Victor-Marie Hugo, né à Besançon le <date
+                                                  when="1802-02-26">26 février 1802</date>, mort à
+                                                  <placeName>Paris</placeName> le <date
+                                                  when="1885-05-22">22 mai 1885</date>, n'a traversé
+                                                  <placeName>Nancy</placeName> qu'une fois, en <date
+                                                  when="1839">1839</date>, sans particulièrement
+                                                mentionner cette ville dans son oeuvre - sinon à la
+                                                rime dans <title><hi
+                                                  rend="i">La Légende des Siècles</hi></title>, ni
+                                                dans sa correspondance : une lettre datée de <date
+                                                  when="1878-12-03">1878</date> et adressée à
+                                                  <persName>Louis Lallemant</persName> prendra la
+                                                défense de la <placeName>porte
+                                                  Saint-Georges</placeName> au titre des monuments
+                                                historiques.</p>
+                                </note>
+                                <note
+                                        xml:id="n4">
+                                        <p>Il est caractéristique de noter que V. Hugo et ou son
+                                                correspondant utilisent en 1840 le nom
+                                                révolutionnaire de la rue des Dominicains.</p>
+                                </note>
+
+                        </div>
+                </back>
+        </text>
+</TEI>
