@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Programme</title>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css">
+   </head>
+   <body><textarea id="source">
+title: Programme de la formation
+description: Lou BurnardEmmanuel Chateau, 
+theme: theme/remark-dark-em.css
+name: inverse
+layout: true
+class: inverse
+
+---
+class: center middle
+
+
+
+# 00-Programme
+
+## Formation TEI | ENC 17-20 novembre 2015
+
+.footnote[[Répertoire GitHub](https://github.com/tei-fr/formationEnc2015-11) | [Programme](00-programme.html)]
+![test](images/logo-ecole-nationale-des-chartes.png)
+
+---
+name: Programme d’ensembleComprendre les enjeux de la modélisation d’une édition critiqueS’y retrouver dans la TEIPouvoir personnaliser la TEI pour son projetApprendre le language ODDSavoir documenter son modèleIdentifier l’utilité d’un modèle pour la pérennisation
+
+## Programme d’ensemble
+
+* Comprendre les enjeux de la modélisation d’une édition critique
+
+* S’y retrouver dans la TEI
+
+* Pouvoir personnaliser la TEI pour son projet
+
+* Apprendre le language ODD
+
+* Savoir documenter son modèle
+
+* Identifier l’utilité d’un modèle pour la pérennisation
+
+---
+
+
+## .red[Première] journée&nbsp;: pourquoi produire un modèle&nbsp;?
+* 09h30-10h00&nbsp;: [Introduction de la formation](00-programme.html)
+* 10h-10h45&nbsp;: [La production d’une édition numérique](01-editionNumerique.html)
+* 10h45-11h15&nbsp;: pause
+* 11h15-12h&nbsp;: [Ce que propose la TEI](02-teiGeneralites.html)
+* 12h-13h30&nbsp;: pause dejeuner
+* 13h30-14h00&nbsp;: [Savoir manipuler les Guidelines et les spécifications](03-organisation.html)
+* 14h00-14h30&nbsp;: [Personnaliser la TEI](04-personnalisation.html)
+* 14h30-15h00&nbsp;: TP01&nbsp;: Installation du module ODD d’Oxygen
+* 15h00-16h00&nbsp;: TP02&nbsp;: Premier exercice d’encodage de ses documents
+* 16h00-16h30&nbsp;: pause
+* 16h30-17h30&nbsp;: TP03&nbsp;: Quizz TEI
+
+???
+
+.footnote[Objectifs&nbsp;: Mettre à niveau les participants sur la connaissance de l’organisation des Guidelines et les enjeux d’une modélisation à l’aide d’un schéma.]
+
+---
+
+
+## .red[2&lt;sup&gt;ème&lt;/sup&gt;] journée
+* 09h30-10h30&nbsp;: Exposé des projets
+* 10h30-11h00&nbsp;: Pause
+* 11-11h30&nbsp;: De quoi a-t-on besoin&nbsp;?
+* 11h30-12h30&nbsp;: Mon premier schéma ODD (création schéma simple, complexifier, ODD)
+* 12h30-13h30&nbsp;: Pause déjeuner
+* 14h-15h00&nbsp;: Le langage ODD
+* 15h-15h30&nbsp;: Pause
+* 15h30-16h00&nbsp;: TEI sous le capot
+* 16h-17h30&nbsp;: Pure ODD
+
+???
+
+.footnote[Objectifs&nbsp;: Connaître les principes d’un langage de spécification de schéma et apprendre les bases de la syntaxe ODD. Avoir vu la manière dont la TEI utilise ODD.]
+
+---
+
+
+## .red[3&lt;sup&gt;ème&lt;/sup&gt;] journée
+
+* Présentation de modules (survol sur tout ce qui est disponible, il y a probablement tt ce qu’il faut)
+
+* Création de vos propres schémas (exercice d’analyse à partir de vos propres sources = travail en binôme ou en groupe)
+
+* Travail sur les cas (mise en commun)
+
+* Créer un premier ODD avec Roma
+
+???
+
+.footnote[Objectifs&nbsp;: Identifier ce qui est déjà dans la TEI, et modéliser sa source. Arriver à une liste des éléments nécessaires pour son schéma, identification des éléments disponibles et des lacunes éventuelles de la TEI. Sélectionner les éléments utiles pour son projet dans Roma. = un premier schéma personnalisé pour son projet (TEI subset). Analyser le ODD et repérer sa syntaxe, comprendre son implication.]
+
+---
+
+
+## .red[4&lt;sup&gt;ème&lt;/sup&gt;] journée
+
+* Poursuite du travail sur les projets
+
+* Produire un ODD avec style
+
+* Comment fournir des exemples
+
+* Comment organiser son fichier ODD
+
+* Take away&nbsp;: perennisation
+
+???
+
+.footnote[Objectifs&nbsp;: Identifier ce qui est déjà dans la TEI, et modéliser sa source. Arriver à une liste des éléments nécessaires pour son schéma, identification des éléments disponibles et des lacunes éventuelles de la TEI. Comprendre l’intérêt du schéma pour assurer la pérennisation de ses sources. Identifier la manière dont peut contribuer à la TEI (exemples groupe).]
+
+---
+
+
+### S’assurer d’avoir git
+
+* Ouvrir un terminal
+
+* Tapez `git version`
+
+* Si Git est absent tapez `apt-get install git`
+
+### Se déplacer dans l’arborescence de fichiers
+
+* `cd Desktop/formationEnc2015-11/`
+
+* `cd ..`
+
+### Mettre à jour les sources
+
+* `cd Desktop/formationEnc2015-11/`
+
+* `git pull`
+
+---
+
+
+## Télécharger les sources
+
+* Aller sur https://github.com/tei-fr/formationEnc2015-11
+
+* Copiez le lien HTTPS
+
+* Ouvrez le terminal et tapez les commandes magiques suivantes
+cd Desktopgit clone --recursive https://github.com/tei-fr/formationEnc2015-05.git
+---
+
+
+## Organisation du répertoire
+
+* `exemples/` exemples tei
+
+* `exercices/` contient les dossiers de travaux pratiques
+
+* `images/` contenus graphiques
+
+* `pdf/` présentations au format pdf
+
+* `presentations/` présentations au format HTML
+
+* `ressources/` matériel d’accompagnement
+
+* `schemas/` schémas distribués pour la formation
+
+* `sources/` sources tei des présentations (contient un sous-module schema/)
+
+* `xsl/` transformations xslt
+
+---
+
+
+## Utiliser ces diapositives
+
+* `←`, `↑`, `Pg Up`, `k`&nbsp;: aller à la page précédente
+
+* `→`, `↓`, `Pg Dn`, `Espace`, `j`&nbsp;: aller à la page suivante
+
+* `Home`&nbsp;: aller à la première diapositive
+
+* `End`&nbsp;: aller à la dernière diapositive
+
+* `f`&nbsp;: afficher en plein écran
+
+* `Esc`&nbsp;: quitter le mode plein écran
+
+* `?`, `h`&nbsp;: afficher l’aide
+
+---
+class: center middle
+
+
+## Pour [commencer](01-editionNumerique.html)
+
+.footnote[[Revenir au début](#index) | [Programme](00-programme.html)]
+</textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body>
+</html>
