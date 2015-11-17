@@ -44,11 +44,11 @@
         <p>Nous avons besoin de deux choses complémentaires : <list>
             <item>un schéma formel (utilisant un langage informatique tel que DTD, RELAX NG, W3C
               Schema, Schematron) qui peut contrôler<list>
-                <item>quelles sont les balises disponibles ?</item>
-                <item>dans quels contextes ?</item>
-                <item>avec quels attributs ?</item>
-                <item>avec quelles valeur ?</item>
-                <item>en respectant quelles contraintes ?</item>
+                <item>quelles sont les balises disponibles ?</item>
+                <item>dans quels contextes ?</item>
+                <item>avec quels attributs ?</item>
+                <item>avec quelles valeur ?</item>
+                <item>en respectant quelles contraintes ?</item>
               </list>
             </item>
 
@@ -65,11 +65,11 @@
       <div xml:lang="fr">
         <head>OK, mais pourquoi ODD? </head>
         <p>Ces attentes pourraient etre satisfaites en plusieurs manières. Les avantages ODD : <list>
-            <item>un format XML bien établi, d</item>
-            <item>faisant partie intégrale du système TEI</item>
-            <item>permettant un traitement fortement integré avec d'autres systèmes TEI</item>
-            <item>à la longue terme</item>
-            <item>standardisée</item>
+            <item>un format XML bien établi,</item>
+            <item>faisant partie intégrale du système TEI,</item>
+            <item>permettant un traitement fortement integré avec d'autres systèmes TEI,</item>
+            <item>pérennisation à long terme</item>
+            <item>standardisé</item>
           </list></p>
       </div>
       <div xml:lang="en">
