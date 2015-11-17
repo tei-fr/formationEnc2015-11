@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/home/eric/Documents/TEI/autographes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+        xmlns="http://www.tei-c.org/ns/1.0">
+
+
+        <teiHeader>
+                <fileDesc>
+                        <titleStmt>
+                                <title>Edition électronique d'une lettre autographe de J.-J.
+                                        Grandville</title>
+                                <principal>J.-J. Grandville</principal>
+                          <respStmt><resp>Edition : </resp><persName>Eric Nunes</persName>
+                          </respStmt>
+                          
+                        </titleStmt>
+
+                        <publicationStmt>
+                                <publisher>Les Bibliothèques de Nancy</publisher>
+                                <address>
+                                        <addrLine>Bibliothèque Stanislas</addrLine>
+                                        <addrLine>43 rue Stanislas</addrLine>
+                                        <addrLine>54000 <placeName>Nancy</placeName></addrLine>
+                                </address>
+                                <date
+                                        when="2015-07">novembre 2015</date>
+                                <availability
+                                        status="restricted">
+                                        <p>Licence ouverte</p>
+                                </availability>
+
+                        </publicationStmt>
+                        <sourceDesc>
+                                <msDesc>
+                                        <msIdentifier>
+                                                <country>France</country>
+                                                <repository>Bibliothèque municipale de Nancy </repository>
+                                                <collection>Manuscrits</collection>
+                                                <idno>Rés 4288-b</idno>
+                                        </msIdentifier>
+                                        <msContents>
+                                                <summary> Cette <hi rend="i">préface</hi> autographes reliée avec l'album de ses
+                                                  dessins originaux pour les <title>Fables de
+                                                  La Fontaine</title> (Bibliothèque Stanislas Rés.
+                                                  4288-b) est un long plaidoyer de Grandville. Il entend y faire comprendre les difficultés qu'il a eu au cours de sa carrière à faire traduire son oeuvre dans les meilleurs conditions. <!--à développer--></summary>
+                                                <textLang
+                                                  mainLang="fre">français</textLang>
+                                        </msContents>
+                                        <physDesc>
+                                                <objectDesc
+                                                  form="letter">
+                                                  <supportDesc
+                                                  material="paper">
+                                                  <support>Papier</support>
+                                                  <extent>5 feuillets reliés au début de l'album des
+                                                  dessins du La Fontaine/.<dimensions
+                                                  scope="all"
+                                                  type="leaf"
+                                                  unit="cm">
+                                                  <height>21,4</height>
+                                                  <width>13,5</width>
+                                                  </dimensions>
+                                                  </extent>
+                                                  </supportDesc>
+
+                                                </objectDesc>
+
+                                        </physDesc>
+
+
+                                </msDesc>
+                                <biblStruct>
+                                        <analytic>
+                                                <author>
+                                                  <persName>
+                                                  <surname>Bassy</surname>
+                                                  <forename>Alain-Marie</forename>
+                                                  </persName>
+                                                </author>
+                                                <title
+                                                  level="a"><hi
+                                                  rend="i">Les illustrations romantiques des Fables
+                                                  de La Fontaine</hi></title>
+                                        </analytic>
+                                        <!--voir pour entre guillements-->
+                                        <monogr>
+                                                <title
+                                                  level="m"><hi
+                                                  rend="i">Romantisme</hi></title>
+                                                <imprint>
+                                                  <pubPlace>Paris</pubPlace>
+                                                  <date
+                                                  when="1952">1971</date>
+                                                </imprint>
+                                                <biblScope
+                                                  unit="p"
+                                                  from="94"
+                                                  to="111">94-111</biblScope>
+                                        </monogr>
+
+                                </biblStruct>
+
+
+
+                                <biblStruct>
+                                        <monogr>
+                                                <author><persName><surname>Kaenel</surname><forename>Philippe</forename></persName></author>
+                                                <title
+                                                  level="m"><hi
+                                                  rend="i">Le métier d'illustrateur, 1830-1880 :
+                                                  Rodolphe Toepfer, J.-J. Grandville, Gustave
+                                                  Doré</hi></title>
+                                                <imprint>
+                                                  <pubPlace>Genève</pubPlace>
+                                                  <publisher>Droz</publisher>
+                                                  <date>2005</date>
+                                                </imprint>
+                                        </monogr>
+                                </biblStruct>
+                        </sourceDesc>
+
+                </fileDesc>
+
+                <encodingDesc>
+                        <projectDesc>
+                                <p>Transcription réalisée d'après les feuillets autographes reliés
+                                        avec l'album des dessins originaux de Grandville pour les
+                                        <title>Fables de La Fontaine</title> (Bibliothèque Stanislas Rés.
+                                        4288-b)</p>
+                        </projectDesc>
+                </encodingDesc>
+                <profileDesc>
+                        <langUsage>
+                                <language
+                                        ident="fre">français</language>
+                        </langUsage>
+                </profileDesc>
+        </teiHeader>
+
+        <text>
+                <body>
+                        <div
+                                type="leaf"
+                                xml:id="f1">
+                                <div
+                                        type="image"
+                                        facs="../autographes/images/B543956101R04288_01_0007_1.jpg">
+                                  
+                                </div>
+                                <div
+                                        type="title">
+                                        <p> Au <subst>
+                                                  <del
+                                                  rend="strikethrough">propriétaire</del>
+                                                  <add place="above">possesseur</add>
+                                                </subst> présent ou futur<lb></lb> de cet album </p>
+                                </div>
+                                <div
+                                        type="letter">
+
+                                        <p>Quelques vicissitudes qu'éprouvent ces deux volumes
+                                                contenant tous les <lb></lb>dessins originaux du La
+                                                Fontaine, <add
+                                                  rend="over">et par quelle transmission qu'ils
+                                                  passent</add>, je me persuade qu'ils
+                                                <lb></lb>finiront toujours par tomber entre les
+                                                mains d'un propriétaire<lb></lb> curieux pour lequel
+                                                il sera intéressant 1<hi
+                                                  rend="superscript">o</hi> de confronter
+                                                <lb></lb>ces dessins avec les gravures et d'avoir à
+                                                y découvrir les<lb></lb> modifications apportées. 2<hi
+                                                  rend="superscript">o</hi> de connaître par un
+                                                court précis<lb></lb> que je puis appeler historique
+                                                les causes, les dates de la<lb></lb> publication de
+                                                cet ouvrage que l'on s'accorde généralement à
+                                                trouver<lb></lb> ma meilleure illustration
+                                                3<hi
+                                                  rend="superscript">o</hi> de voir par quelle
+                                                filière<lb></lb> la pensée de chacun de ces dessins
+                                                à passé pour arriver à son <gap reason="illegible"></gap><!--doute ici--><lb></lb>
+                                                exécution définitive. 4<hi
+                                                  rend="superscript">o</hi> de constater quelle
+                                                détérioration<lb></lb> le report sur bois et la
+                                                gravure ont pu faire subir artistement<lb></lb>
+                                                parlant à la plupart de ces compositions, et certes
+                                                ce sera pour<lb></lb> moi un grand soulagement que
+                                                de pouvoir protester <add
+                                                  place="above">ou expliquer</add>
+                                                <!--en marge : que je regarde avec plaisir ct traiter avec xslt ?--> <add place="margin"> que je regarde avec plaisir</add> enfin
+                                                ici contre<lb></lb> tant de fautes de dessin <add
+                                                  place="above">contre le </add><unclear
+                                                  cert="low"></unclear><gap
+                                                  reason="indéchiffrable"></gap>ou d'effet qui ne
+                                                sont pas de mon fait<lb></lb> et que j'ai eu le
+                                                dépit <add
+                                                  place="above"><!--?????--></add><unclear
+                                                  cert="low"></unclear><gap
+                                                  reason="indéchiffrable"></gap> de voir reproduites
+                                                à vingt cinq mille<lb></lb> et colportées jusqu'en
+                                                amérique... terre fort peu artiste<lb></lb> dit-on.
+                                                5 <!-- comment coder écrit par dessus un autre mot <retrace> ? -->
+                                                <hi
+                                                  rend="superscript">o</hi> enfin ce sera <add
+                                                  place="above">déja</add> pour <del
+                                                  rend="overstrike">la personne à laquelle</del>
+                                                <add> l'amateur auquel </add>
+                                                <del
+                                                  rend="over"></del>ces<lb></lb> deux albums
+                                                appartiendront une petite satisfaction
+                                                d'amour-propre<lb></lb> que de posséder seul ces
+                                                errata, ces repentirs, ces variantes de la<lb></lb>
+                                                plume et de la pensée de l'auteur de ces dessins,
+                                                sans compter qu'il<lb></lb> jouira encore par dessus
+                                                le marché du plaisir de posséder<lb></lb> une
+                                                  <del>préface</del> autographe préface qui, si ces
+                                                dessins ont quelque prix<lb></lb> aura le sien
+                                                aussi. Il arrive si peu que le dessinateur
+                                                puisse<lb></lb> se commenter, s'exliquer, se
+                                                justifier <add
+                                                  place="above">avec la plume</add> devant le public
+                                                qui ne<lb></lb>
+                                                <unclear
+                                                  cert="low">peut</unclear> connaitre que son crayon
+                                                et son pinceau. Et je ne puis trop le
+                                                répeter<lb></lb> ce m'est une grande satisfaction
+                                                que de trouver ainsi l'unique<lb></lb> occasion que
+                                                j'ai pu trouver de faire l'auteur et de
+                                                présenter<lb></lb> à mon public, mon unique lecteur,
+                                                cette un peu longue préface<lb></lb> justificative,
+                                                mais qui pourrait bien être placée en tête
+                                                de<lb></lb> tous les livres que j'ai orné de
+                                                vignettes, car <quote
+                                                  xml:lang="lat">ab uno disce
+                                                omnes.</quote><lb></lb> Eh ! qui sait, Je ne puis me
+                                                le dissimuler, il <unclear
+                                                  cert="low">est doux</unclear> à mon petit<lb></lb>
+                                                amour-propre de penser qu'un jour, n jour après ma
+                                                vie... quelque<lb></lb> consciencieux éditeur voudra
+                                                bien <subst>
+                                                  <del
+                                                  rend="strikethrough">extraire de ce</del>
+                                                  <add
+                                                  place="above">prenant connaissance</add>
+                                                </subst> de <gap
+                                                  reason="illegible"></gap><add
+                                                  place="above">cette note</add> en<lb></lb>
+                                                extraire de quoi faire une préface qu'il offrira au
+                                                public en tête d'une<lb></lb> nouvelle édition d'un
+                                                  <bibl>La Fontaine</bibl> illustrée.. (je plains
+                                                les souscripteurs<lb></lb> doublement en ce cas,
+                                                d'abord à cause de l'état ou seront les
+                                                bois..<lb></lb> puis.. s'il <subst>
+                                                  <del
+                                                  rend="strikethrough">est</del>
+                                                  <add> se croit</add>
+                                                </subst> obligé de lire... beaucoup de mon style )
+                                                mais voyez<lb></lb> ou va l'amour propre humain </p>
+
+
+                                </div>
+                        </div>
+                </body>
+
+        </text>
+</TEI>
