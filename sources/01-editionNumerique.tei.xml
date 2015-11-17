@@ -35,9 +35,7 @@
       <titlePage xml:lang="fr">
         <titlePart>01-Un rapide panorama de l’édition critique avec la TEI</titlePart>
         <docImprint>Formation TEI | ENC 17-20 novembre 2015</docImprint>
-        <note><ref target="https://github.com/tei-fr/formationEnc2015-11">Répertoire
-          GitHub</ref></note>
-        <note><ref target="https://github.com/tei-fr/formationEnc2015-11">Programme</ref></note>
+        <note><ref target="https://github.com/tei-fr/formationEnc2015-11">GitHub</ref> | <ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="slide" xml:lang="fr">
         <div>
