@@ -35,7 +35,7 @@
       <titlePage xml:lang="fr">
         <titlePart>01-Un rapide panorama de l’édition critique avec la TEI</titlePart>
         <docImprint>Formation TEI | ENC 17-20 novembre 2015</docImprint>
-        <note><ref target="https://github.com/tei-fr/formationEnc2015-11">GitHub</ref> | <ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="https://github.com/tei-fr/formationEnc2015-11">Répertoire GitHub</ref> | <ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="slide" xml:lang="fr">
         <div>
@@ -739,7 +739,7 @@
       <div>
         <div rend="title" xml:lang="fr">
           <head>XML, <ref target="02-teiGeneralites.html">Et la TEI dans tout ça ?</ref></head>
-          <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
+          <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.html"
               >Programme</ref></note>
         </div>
       </div>

@@ -33,20 +33,10 @@
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>02-teiGénéralités</titlePart>
+        <titlePart>02-teiGénéralités : La TEI comme cadre de travail pour l’édition des textes</titlePart>
         <docImprint>Formation TEI | ENC 17-20 novembre 2015</docImprint>
-        <note><ref target="https://github.com/tei-fr/formationEnc2015-11">GitHub</ref> | <ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="https://github.com/tei-fr/formationEnc2015-11">Répertoire GitHub</ref> | <ref target="00-programme.html">Programme</ref></note>
       </titlePage>
-      <div rend="slide" xml:lang="fr" xml:id="index">
-        <div>
-          <head>La TEI comme cadre de travail pour l’édition des textes</head>
-          <list type="unordered">
-            <item/>
-            <item/>
-            <item/>
-          </list>
-        </div>
-      </div>
       <div rend="slide" xml:lang="fr">
         <div>
           <head>Pourquoi la Text Encoding Initiative ?</head>
@@ -123,10 +113,10 @@
       <div rend="slide">
         <div>
           <head>La Text Encoding Initiative comme cadre de travail pour l’édition des textes</head>
-          <list>
-            <item>1. <ref target="#part1">Historique de la TEI</ref></item>
-            <item>2. <ref target="#part2">Objectifs et principes</ref></item>
-            <item>3. <ref target="#part3">Fonctionnement de la TEI</ref></item>
+          <list type="ordered">
+            <item><ref target="#part1">Historique de la TEI</ref></item>
+            <item><ref target="#part2">Objectifs et principes</ref></item>
+            <item><ref target="#part3">Fonctionnement de la TEI</ref></item>
           </list>
         </div>
       </div>

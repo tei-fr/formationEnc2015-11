@@ -162,6 +162,12 @@
     <xsl:apply-templates/>
     <xsl:text>]</xsl:text>
   </xsl:template>
+  
+  <xsl:template match="hi[@rend='superscript']">
+    <xsl:text>&lt;sup&gt;</xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>&lt;/sup&gt;</xsl:text>
+  </xsl:template>
 
   <xsl:template match="ident">
     <xsl:text>`</xsl:text>
@@ -178,8 +184,14 @@
         <xsl:text>* </xsl:text>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates/>
-    <xsl:apply-templates select="following-sibling::item[1]"/>
+    <xsl:value-of select="."/>
+    <xsl:text> : </xsl:text>
+    <xsl:value-of select="following-sibling[1]"/>
+  </xsl:template>
+  
+  <xsl:template match="item[preceding-sibling::label]">
+    <xsl:apply-templates />
+    <xsl:call-template name="newline"/>
   </xsl:template>
 
   <xsl:template match="titlePart">
@@ -203,5 +215,11 @@
     <xsl:value-of select="@target"/>
     <xsl:text>)</xsl:text>
   </xsl:template>
-
+  
+  <xsl:template match="code">
+    <xsl:text>`</xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>`</xsl:text>
+  </xsl:template>
+  
 </xsl:stylesheet>

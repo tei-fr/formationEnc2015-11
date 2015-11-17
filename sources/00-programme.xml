@@ -26,7 +26,7 @@
     <titlePage xml:lang="fr">
       <titlePart>00-Programme</titlePart>
       <docImprint>Formation TEI | ENC 17-20 novembre 2015</docImprint>
-      <note><ref target="https://github.com/tei-fr/formationEnc2015-11">GitHub</ref> | <ref target="00-programme.html">Programme</ref></note>
+      <note><ref target="https://github.com/tei-fr/formationEnc2015-11">Répertoire GitHub</ref> | <ref target="00-programme.html">Programme</ref></note>
     </titlePage>
     <div rend="slide" xml:lang="fr" xml:id="index">
         <div>
@@ -45,7 +45,7 @@
     <body>
       <div rend="slide" xml:lang="fr">
         <div>
-          <head>Première journée : pourquoi produire un modèle ?</head>
+          <head><hi>Première</hi> journée : pourquoi produire un modèle ?</head>
           <list type="gloss">
             <label>09h30-10h00</label>
             <item><ref target="00-programme.html">Introduction de la formation</ref></item>
@@ -79,7 +79,7 @@
       </div>
       <div rend="slide" xml:lang="fr">
         <div>
-          <head>2<hi rend="superscript">ème</hi> journée</head>
+          <head><hi>2<hi rend="superscript">ème</hi></hi> journée</head>
           <list>
             <label>09h30-10h30</label>
             <item>Exposé des projets</item>
@@ -109,6 +109,7 @@
       </div>
       <div rend="slide" xml:lang="fr">
         <div>
+          <head><hi>3<hi rend="superscript">ème</hi></hi> journée</head>
           <list>
             <item>Présentation de modules (survol sur tout ce qui est disponible, il
                   y a probablement tt ce qu’il faut)</item>
@@ -130,7 +131,7 @@
       </div>
       <div rend="slide" xml:lang="fr">
         <div>
-          <head>4<hi rend="superscript">ème</hi> journée</head>
+          <head><hi>4<hi rend="superscript">ème</hi></hi> journée</head>
             <list>
               <item>Poursuite du travail sur les projets</item>
               <item>Produire un ODD avec style</item>
@@ -147,17 +148,27 @@
           contribuer à la TEI (exemples groupe).</note>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide">
         <div>
-          <head>S’assurer d’avoir git</head>
+          <div><head>S’assurer d’avoir git</head>
           <list>
             <item>Ouvrir un terminal</item>
             <item>Tapez <code>git version</code></item>
-          </list>
-          <p>Se déplacer dans l’arborescence de fichiers</p>
+            <item>Si Git est absent tapez <code>apt-get install git</code></item>
+          </list></div>
+          <div><head>Se déplacer dans l’arborescence de fichiers</head>
+          <list>
+            <item><code>cd Desktop/formationEnc2015-11/</code></item>
+            <item><code>cd ..</code></item>
+          </list></div>
+          <div><head>Mettre à jour les sources</head>
+            <list>
+              <item><code>cd Desktop/formationEnc2015-11/</code></item>
+              <item><code>git pull</code></item>
+            </list></div>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide">
         <div>
           <head>Télécharger les sources</head>
           <list>
@@ -173,30 +184,37 @@
         <div>
           <head>Organisation du répertoire</head>
           <list>
-            <item>exemples/ exemples tei</item>
-            <item>exercices/ contient les dossiers de travaux pratiques</item>
-            <item>images/ contenus graphiques</item>
-            <item>pdf/ présentations au format pdf</item>
-            <item>presentations/ présentations au format HTML</item>
-            <item>ressources/ matériel d’accompagnement</item>
-            <item>schemas/ schémas distribués pour la formation</item>
-            <item>sources/ sources tei des présentations (contient un sous-module schema/)</item>
-            <item>xsl/ transformations xslt</item>
+            <item><ident>exemples/</ident> exemples tei</item>
+            <item><ident>exercices/</ident> contient les dossiers de travaux pratiques</item>
+            <item><ident>images/</ident> contenus graphiques</item>
+            <item><ident>pdf/</ident> présentations au format pdf</item>
+            <item><ident>presentations/</ident> présentations au format HTML</item>
+            <item><ident>ressources/</ident> matériel d’accompagnement</item>
+            <item><ident>schemas/</ident> schémas distribués pour la formation</item>
+            <item><ident>sources/</ident> sources tei des présentations (contient un sous-module schema/)</item>
+            <item><ident>xsl/</ident> transformations xslt</item>
           </list>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide" xml:lang="fr">
         <div>
           <head>Utiliser ces diapositives</head>
           <list>
-            <item>←, ↑, Pg Up, k : aller à la page précédente</item>
-            <item>→, ↓, Pg Dn, Espace, j : aller à la page suivante</item>
-            <item>Home : aller à la première diapositive</item>
-            <item>End : aller à la dernière diapositive</item>
-            <item>f : afficher en plein écran</item>
-            <item>Esc : quitter le mode plein écran</item>
-            <item>?, h : afficher l’aide</item>
+            <item><ident>←</ident>, <ident>↑</ident>, <ident>Pg Up</ident>, <ident>k</ident> : aller à la page précédente</item>
+            <item><ident>→</ident>, <ident>↓</ident>, <ident>Pg Dn</ident>, <ident>Espace</ident>, <ident>j</ident> : aller à la page suivante</item>
+            <item><ident>Home</ident> : aller à la première diapositive</item>
+            <item><ident>End</ident> : aller à la dernière diapositive</item>
+            <item><ident>f</ident> : afficher en plein écran</item>
+            <item><ident>Esc</ident> : quitter le mode plein écran</item>
+            <item><ident>?</ident>, <ident>h</ident> : afficher l’aide</item>
           </list>
+        </div>
+      </div>
+      <div>
+        <div rend="title" xml:lang="fr">
+          <head>Pour <ref target="01-editionNumerique.html">commencer</ref></head>
+          <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.html"
+            >Programme</ref></note>
         </div>
       </div>
     </body>
