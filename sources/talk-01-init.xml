@@ -41,22 +41,35 @@
       </div>
       <div xml:lang="fr">
         <head>À quoi ca sert, un ODD? </head>
-        <p>Nous avons besoins de plusieurs choses : <list>
+        <p>Nous avons besoin de deux choses complémentaires : <list>
             <item>un schéma formel (utilisant un langage informatique tel que DTD, RELAX NG, W3C
               Schema, Schematron) qui peut contrôler<list>
-                <item>quelles sont les balises disponibles ?</item>
-                <item>dans quels contextes ?</item>
-                <item>avec quels attributs ?</item>
-                <item>avec quelles valeur ?</item>
-                <item>en respectant quelles contraintes ?</item>
+                <item>quelles sont les balises disponibles ?</item>
+                <item>dans quels contextes ?</item>
+                <item>avec quels attributs ?</item>
+                <item>avec quelles valeur ?</item>
+                <item>en respectant quelles contraintes ?</item>
               </list>
             </item>
+
+
             <item>Une documentation pour expliciter aux utilisateurs / développeurs nos principes
               éditoriaux, nos principes de choix de balises, etc. : <list>
                 <item>dans plusieurs langues naturelles ;</item>
                 <item>dans plusieurs formats de fichiers (PDF, MsWord, HTML, epub,...).</item>
               </list></item>
-            <item>Des outils informatiques pour transformer et gérer nos données XML.</item>
+            <!--         <item>Des outils informatiques pour transformer et gérer nos données XML.</item>
+-->
+          </list></p>
+      </div>
+      <div xml:lang="fr">
+        <head>OK, mais pourquoi ODD? </head>
+        <p>Ces attentes pourraient etre satisfaites en plusieurs manières. Les avantages ODD : <list>
+            <item>un format XML bien établi, d</item>
+            <item>faisant partie intégrale du système TEI</item>
+            <item>permettant un traitement fortement integré avec d'autres systèmes TEI</item>
+            <item>à la longue terme</item>
+            <item>standardisée</item>
           </list></p>
       </div>
       <div xml:lang="en">
@@ -84,7 +97,7 @@
             <item>des schémas</item>
             <item>des types d’élément XML, indépendants des schémas</item>
             <item>des regroupements de tels éléments, publics ou privés </item>
-            <item>des patrons (MLE macros) </item>
+            <item>des patrons (MLE macros) et des spécifications de donnée (datatype)</item>
             <item>des classes (et sous-classes) d’éléments</item>
             <item>des références de tels objets</item>
           </list>
@@ -95,6 +108,16 @@
           </list></p>
         <p rend="box">et devrait être intégrable dans un système de balisage documentaire
           classique</p>
+      </div>
+      <div xml:lang="fr">
+        <head>L'idée essentielle de ODD 2</head>
+        <p rend="box">Un ODD peut combiner plusieurs spécifications pour un meme objet <list>
+            <item>une qui est <soCalled>canonique</soCalled>, referencee dans les Guidelines</item>
+            <item>une (ou plusieurs) supplementaires, modifiées en partie ou totalement</item>
+            <item>ces versions partielles peuvent etre presentes dans l'ODD ou bien heritées d'un
+              ODD intermediaire</item>
+          </list></p>
+        <p>Les règles de combinaison sont explicites, mais un peu complèxes... </p>
       </div>
       <div xml:lang="en">
         <head>Basic ODD components for schema definition</head>
@@ -557,7 +580,7 @@
         <p rend="box">Et comme tout projet de documentation : versioning, référencements extérieurs,
           mappings ontologiques…</p>
       </div>
-      <div xml:lang="en">
+      <!-- <div xml:lang="en">
         <head>Descriptions and glosses</head>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <elementSpec ident="para">
@@ -568,7 +591,7 @@
             <desc xml:lang="fr">marque les paragraphes dans un texte en prose.</desc>
             <desc xml:lang="es">marca párrafos en prosa.</desc>
             <desc xml:lang="it">indica i paragrafi in prosa</desc>
-            <!-- ... -->
+            <!-\- ... -\->
           </elementSpec>
         </egXML>
       </div>
@@ -583,7 +606,7 @@
             <desc xml:lang="fr">marque les paragraphes dans un texte en prose.</desc>
             <desc xml:lang="es">marca párrafos en prosa.</desc>
             <desc xml:lang="it">indica i paragrafi in prosa</desc>
-            <!-- ... -->
+            <!-\- ... -\->
           </elementSpec>
         </egXML>
       </div>
@@ -634,6 +657,7 @@
         <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;egXML
           xmlns="http://www.tei-c.org/ns/Examples"> <p>un paragraphe</p> &lt;/egXML></egXML>
       </div>
+ -->
       <div xml:lang="en">
         <head>More sophisticated constraints</head>
         <list>
@@ -706,7 +730,8 @@
           </schemaSpec></egXML>
         <p>L’élément <gi>moduleRef</gi> nous fournit un ensemble de définitions infrastructurales,
           notamment pour les classes utilisées partout dans le systeme TEI. À part cela, nous
-          n’avons besoin que de référencer les éléments TEI souhaités avec un <gi>elementRef</gi>. </p>
+          n’avons besoin que de référencer les éléments TEI souhaités avec un <gi>elementRef</gi>.
+        </p>
       </div>
       <div xml:lang="en">
         <head>Constructing a TEI ODD</head>
