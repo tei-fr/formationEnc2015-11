@@ -379,7 +379,7 @@
          </div>
          <div rend="slide">
             <div>
-               <head>Convention de nommage</head>
+               <head>Conventions de nommage</head>
                <div>
                   <head>Identifants générique</head>
                   <p>Les noms d’éléments sont les identifiants génériques</p>
@@ -390,6 +390,11 @@
                   <p>prennent la forme <ident>@attname</ident>, où "attname" est le nom de l’attribut</p>
                   <p>ex : <code>&lt;name&gt;</code> correspond à <ident>name</ident></p>
                </div>
+            </div>
+         </div>
+         <div rend="slide">
+            <div>
+               <head>Conventions de nommage (<hi>suite</hi>)</head>
                <div>
                   <head>Références aux classes</head>
                   <p>de la forme <ident>model.divLike</ident> pour les classes de modèle</p>
@@ -400,6 +405,41 @@
                   <p>de la forme <ident>macro.paraContent</ident> pour les macros</p>
                   <p>de la forme <ident>data.pointer</ident> pour les types de données.</p>
                </div>
+               <div>
+                  <p>suffixes <ident>Part</ident>, <ident>Like</ident></p>
+                  <p>racine <ident>global</ident> pour indiquer que les membres de la classe sont permis n’importe où dans un document TEI</p>
+                  <p>suffixes additionnels préfixés par <ident>.</ident></p>
+                  <p>ex : <ident>model.divPart</ident>, <ident>model.divPart.spoken</ident></p>
+               </div>
+            </div>
+            <div rend="notes">
+               <p>Introduire la notion d’héritage à partir des conventions de nommage des classes :</p>
+               <p>Le premier suffixe "Part" si les membres de la classe sont tous fils de l’élément racine, ou "Like" les membres de la classe sont tous enfant de l’élément racine.</p>
+               <p>La racine de nom "global" est utilisée pour indiquer que les membres de la classe sont permis partout dans un document TEI</p>
+               <p>Il est possible d’ajouter des suffixes additionnels, préfixés par un "." pour distinguer des sous-classes sémantiques ou structurelles.</p>
+               <p>Par exemple la classe des éléments qui font partie de div est appellée <ident>called model.divPart</ident>. Cette classe inclue dans une sous-classe les éléments qui peuvent faire partie d’une division dans un texte oral, qui est alors nommée <ident>model.divPart.spoken</ident></p>
+            </div>
+         </div>
+         <div rend="slide">
+            <div>
+               <head>Déclaration d’élément</head>
+               <list>
+                  <item><ident>,</ident> Indique une séquence</item>
+                  <item><ident>|</ident> Indique un choix</item>
+                  <item><ident>?</ident> Indique un élément optionnel et qui ne peut pas être répété</item>
+                  <item><ident>*</ident> Indique un élément qui est optionnel mais qui peut être répété</item>
+                  <item><ident>+</ident> Indique un élément obligatoire et qui peut être répété</item>
+               </list>
+            </div>
+            <div rend="notes">
+               <head>Déclaration d’élément</head>
+               <list>
+                  <item><ident>,</ident> Indique une séquence, c’est-à-dire que l’élément à gauche de la virgule doit précéder l’élément à droite.</item>
+                  <item><ident>|</ident>Indique un choix, c’est-à-dire que l’on choisit soit l’élément à gauche de la barre verticale, soit l’élément à droite.</item>
+                  <item><ident>?</ident> Indique un élément optionnel et qui ne peut pas être répété. Autrement dit, il a une cardinalité de 0 ou 1.</item>
+                  <item><ident>*</ident> Indique un élément qui est optionnel mais qui peut être répété. Autrement dit, il a une cardinalité de 0 ou plusieurs, sans limite.</item>
+                  <item><ident>+</ident> Indique un élément obligatoire et qui peut être répété.  Il a donc une cardinalité de 1 ou plusieurs, sans limite.</item>
+               </list>
             </div>
          </div>
          <div rend="title" xml:lang="fr">

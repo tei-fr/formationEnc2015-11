@@ -279,7 +279,7 @@ Généralement, les chapitres suivent une organisation similaire. Ils débutent 
 ---
 
 
-## Convention de nommage
+## Conventions de nommage
 
 ### Identifants générique
 
@@ -293,6 +293,11 @@ prennent la forme `@attname`, où "attname" est le nom de l’attribut
 
 ex&nbsp;: `&lt;name&gt;` correspond à `name`
 
+---
+
+
+## Conventions de nommage (.red[suite])
+
 ### Références aux classes
 
 de la forme `model.divLike` pour les classes de modèle
@@ -304,6 +309,55 @@ de la forme `att.global` pour les classes d’attribut.
 de la forme `macro.paraContent` pour les macros
 
 de la forme `data.pointer` pour les types de données.
+
+suffixes `Part`, `Like`
+
+racine `global` pour indiquer que les membres de la classe sont permis n’importe où dans un document TEI
+
+suffixes additionnels préfixés par `.`
+
+ex&nbsp;: `model.divPart`, `model.divPart.spoken`
+
+???
+
+Introduire la notion d’héritage à partir des conventions de nommage des classes&nbsp;:
+
+Le premier suffixe "Part" si les membres de la classe sont tous fils de l’élément racine, ou "Like" les membres de la classe sont tous enfant de l’élément racine.
+
+La racine de nom "global" est utilisée pour indiquer que les membres de la classe sont permis partout dans un document TEI
+
+Il est possible d’ajouter des suffixes additionnels, préfixés par un "." pour distinguer des sous-classes sémantiques ou structurelles.
+
+Par exemple la classe des éléments qui font partie de div est appellée `called model.divPart`. Cette classe inclue dans une sous-classe les éléments qui peuvent faire partie d’une division dans un texte oral, qui est alors nommée `model.divPart.spoken`
+
+---
+
+
+## Déclaration d’élément
+
+* `,` Indique une séquence
+
+* `|` Indique un choix
+
+* `?` Indique un élément optionnel et qui ne peut pas être répété
+
+* `*` Indique un élément qui est optionnel mais qui peut être répété
+
+* `+` Indique un élément obligatoire et qui peut être répété
+
+???
+
+## Déclaration d’élément
+
+* `,` Indique une séquence, c’est-à-dire que l’élément à gauche de la virgule doit précéder l’élément à droite.
+
+* `|`Indique un choix, c’est-à-dire que l’on choisit soit l’élément à gauche de la barre verticale, soit l’élément à droite.
+
+* `?` Indique un élément optionnel et qui ne peut pas être répété. Autrement dit, il a une cardinalité de 0 ou 1.
+
+* `*` Indique un élément qui est optionnel mais qui peut être répété. Autrement dit, il a une cardinalité de 0 ou plusieurs, sans limite.
+
+* `+` Indique un élément obligatoire et qui peut être répété. Il a donc une cardinalité de 1 ou plusieurs, sans limite.
 
 ---
 class: center middle
