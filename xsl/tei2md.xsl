@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-  xmlns:teix="http://www.tei-c.org/ns/Examples"
-  xmlns:tei="http://www.tei-c.org/ns/1.0"
-  exclude-result-prefixes="tei teix xsl" 
-  xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-  
-  <xsl:import href="/Applications/oxygen/frameworks/tei/xml/tei/stylesheet/markdown/tei-to-markdown.xsl"/>
-  
+  xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0"
+  exclude-result-prefixes="tei teix xsl" xpath-default-namespace="http://www.tei-c.org/ns/1.0">
+
+  <xsl:import
+    href="/Applications/oxygen/frameworks/tei/xml/tei/stylesheet/markdown/tei-to-markdown.xsl"/>
+
   <xsl:output method="html" version="5" indent="yes"/>
-  
+
   <xsl:strip-space elements="egXML"/>
-  
+
   <xsl:param name="language" select="fr"/>
-  
+
   <xsl:template match="/">
     <html>
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>Programme</title>
-        <link href="themes/remark-dark-em.css" rel="stylesheet" media="all"
-          type="text/css"/>
+        <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css"/>
       </head>
       <body>
         <textarea id="source">
@@ -42,7 +40,7 @@
       </body>
     </html>
   </xsl:template>
-  
+
   <xsl:template match="teiHeader">
     <xsl:call-template name="newline"/>
     <xsl:text>title: </xsl:text>
@@ -61,7 +59,7 @@
     <xsl:text>class: inverse</xsl:text>
     <xsl:call-template name="newline"/>
   </xsl:template>
-  
+
   <xsl:template match="titlePage">
     <xsl:call-template name="newline"/>
     <xsl:text>---</xsl:text>
@@ -78,9 +76,9 @@
     <xsl:text>![test](images/logo-ecole-nationale-des-chartes.png)</xsl:text>
     <xsl:call-template name="newline"/>
   </xsl:template>
-  
-  
-  <xsl:template match="div[@rend='title']">
+
+
+  <xsl:template match="div[@rend = 'title']">
     <xsl:call-template name="newline"/>
     <xsl:text>---</xsl:text>
     <xsl:call-template name="newline"/>
@@ -94,8 +92,8 @@
     <xsl:call-template name="newline"/>
     <xsl:apply-templates/>
   </xsl:template>
-  
-  <xsl:template match="div[@rend='slide'] | div[@rend='sommaire']">
+
+  <xsl:template match="div[@rend = 'slide'] | div[@rend = 'sommaire']">
     <xsl:call-template name="newline"/>
     <xsl:text>---</xsl:text>
     <xsl:call-template name="newline"/>
@@ -106,14 +104,14 @@
     <xsl:call-template name="newline"/>
     <xsl:apply-templates/>
   </xsl:template>
-  
-  <xsl:template match="div[@rend='slide']/div[2] | div[@rend='notes']">
+
+  <xsl:template match="div[@rend = 'slide']/div[2] | div[@rend = 'notes']">
     <xsl:call-template name="newline"/>
     <xsl:text>???</xsl:text>
     <xsl:call-template name="newline"/>
     <xsl:apply-templates/>
   </xsl:template>
-  
+
   <xsl:template match="figure">
     <xsl:text>![</xsl:text>
     <xsl:apply-templates select="figDesc"/>
@@ -122,7 +120,7 @@
     <xsl:apply-templates select="graphic/@url"/>
     <xsl:text>)</xsl:text>
   </xsl:template>
-  
+
   <xsl:template match="teix:egXML">
     <xsl:text>
 ```xml
@@ -132,13 +130,13 @@
 ```
 </xsl:text>
   </xsl:template>
-  
+
   <xsl:template match="att">
     <xsl:text>`@</xsl:text>
     <xsl:apply-templates/>
     <xsl:text>`</xsl:text>
   </xsl:template>
-  
+
   <xsl:template match="note">
     <xsl:call-template name="newline"/>
     <xsl:text>.footnote[</xsl:text>
@@ -152,54 +150,58 @@
     <xsl:call-template name="newline"/>
   </xsl:template>
 
-  
+
   <xsl:template match="gi">
     <xsl:text>`&lt;</xsl:text>
     <xsl:apply-templates/>
     <xsl:text>&gt;`</xsl:text>
   </xsl:template>
-  
+
   <xsl:template match="hi">
     <xsl:text>.red[</xsl:text>
-    <xsl:apply-templates />
+    <xsl:apply-templates/>
     <xsl:text>]</xsl:text>
   </xsl:template>
-  
+
   <xsl:template match="ident">
     <xsl:text>`</xsl:text>
     <xsl:apply-templates/>
     <xsl:text>`</xsl:text>
   </xsl:template>
-  
+
   <xsl:template match="label[parent::list]">
     <xsl:choose>
-      <xsl:when test="tei:isOrderedList(..)"><xsl:text>1. </xsl:text></xsl:when>
-      <xsl:otherwise><xsl:text>* </xsl:text></xsl:otherwise>
+      <xsl:when test="tei:isOrderedList(..)">
+        <xsl:text>1. </xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>* </xsl:text>
+      </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates/> 
+    <xsl:apply-templates/>
     <xsl:apply-templates select="following-sibling::item[1]"/>
   </xsl:template>
-  
+
   <xsl:template match="titlePart">
     <xsl:call-template name="newline"/>
     <xsl:text># </xsl:text>
     <xsl:apply-templates/>
     <xsl:call-template name="newline"/>
   </xsl:template>
-  
+
   <xsl:template match="docImprint">
     <xsl:call-template name="newline"/>
     <xsl:text>## </xsl:text>
     <xsl:apply-templates/>
     <xsl:call-template name="newline"/>
   </xsl:template>
-  
+
   <xsl:template match="ref">
     <xsl:text>[</xsl:text>
-    <xsl:apply-templates />
+    <xsl:apply-templates/>
     <xsl:text>](</xsl:text>
     <xsl:value-of select="@target"/>
     <xsl:text>)</xsl:text>
   </xsl:template>
-  
+
 </xsl:stylesheet>
