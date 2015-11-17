@@ -14,6 +14,16 @@
       </fileDesc>
   </teiHeader>
   <text>
+      <front>
+          <titlePage xml:lang="fr">
+              <titlePart>00-Programe</titlePart>
+              <docImprint>Formation TEI | ENC 17-20 novembre 2015</docImprint>
+              <note><ref target="https://github.com/tei-fr/formationEnc2015-11">GitHub</ref> | <ref target="00-programme.html">Programme</ref></note>
+          </titlePage>
+          <div rend="slide" xml:lang="fr">
+              <div>
+                  <head>L’édition critique numérique</head>
+                  <list type="unordered">
       <body>
             <div>
                 <head>Programme</head>
