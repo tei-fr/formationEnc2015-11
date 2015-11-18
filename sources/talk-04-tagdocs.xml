@@ -51,7 +51,7 @@
       </div>
       <div xml:lang="fr">
         <head>TEI ODD sous le capot</head>
-        <p>La TEI est définie avec des fichiers ODD. Ce fut d’ailleurs la raison principale de
+        <p>La TEI est définie au moyen de fichiers ODD. Ce fut d’ailleurs la raison principale de
           l’invention du système. </p>
         <p>La source TEI P5 (disponible ici <ptr
             target="http://www.tei-c.org/release/xml/tei/odd/Source/"/>) rassemble : <list>
@@ -232,14 +232,15 @@
       <div xml:lang="fr">
         <head>De quels types d’objet s’agit-il ?</head>
         <list>
-          <item>datatypes</item>
-          <item>model classes</item>
-          <item>attribute classes</item>
+          <item>types de données (datatypes)</item>
+          <item>classes de modèle (model classes)</item>
+          <item>calsses d’attribut (attribute classes)</item>
           <item>macros</item>
           <item>… et éléments</item>
         </list>
         <p rend="box">Nous allons détailler un exemplaire de chacun de ces objets …</p>
       </div>
+      
       <div xml:lang="en">
         <head>An ODD specification</head>
         <p rend="box">Open <ident>data.sex.xml</ident> with oXygen</p>
@@ -256,7 +257,6 @@
               within a <gi>listRef</gi> element. </item>
           </list></p>
       </div>
-
 
       <div xml:lang="fr">
         <head>Une spécification ODD</head>
