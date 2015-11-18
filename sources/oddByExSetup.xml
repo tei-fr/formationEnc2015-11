@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">Setting Up ODD By Example</title>
+            <title xml:lang="fr">Installer ODD By Example</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2015-11-17" resp="#EC">Added open in a new editor and various corrections</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div xml:lang="fr">
+         <p>Ce document décrit la manière d’installer la feuille de Style ODD By Example avec oXygen.</p>
+         <list>
+            <item>Dans la boîte de dialogue <ident>Configurer les Scénarios de Transformation</ident>, cliquez sur <ident>Nouveau</ident>, puis sélectionnez <ident>XML transformation with XSLT</ident></item>
+            <item>Dans la boîte de dialogue <ident>Nouveau scénario</ident>, renseignez les informations suivantes : 
+               <list type="gloss">
+                  <label>Nom</label>
+                  <item>Remplacez le nom du fichier par <code>oddByExample</code></item>
+                  <label>XML URL</label>
+                  <item>Laissez <code>${currentFileURL}</code></item>
+                  <label>XSL URL</label>
+                  <item><code>${frameworks}/tei/xml/tei/stylesheet/tools/oddbyexample.xsl</code>
+                     (sans blague) (et oui, yena 2 "tei" là)</item>
+                  <label>Transformateur</label>
+                  <item>Saxon-xx 9.5.1.2</item>
+                  <label>Paramètres</label>
+                  <item>Ajoutez un paramètre <code>corpus</code> avec la valeur <code>${cfdu}</code> (cliquez sur paramètre, puis choisir le paramètre dans la liste, enfin remplacez la valeur)</item>
+               </list></item>
+            <item>À droite du nom du processeur il y a un tout petit engrenage jaune. Cliquez dessus pour voir les options avancés. Dans le deuxième champs  (<ident>Template</ident>) insérez  <code>main</code></item>
+            <item>Cliquez sur <ident>Accepter</ident> dans cette boîte de dialogue, et la suivante ; vous revenez sur la boîte de dialogue <ident>Configurer les Scénarios de Transformation</ident>.</item>
+            <item>Sélectionnez l’onglet <ident>Sortie</ident> et cochez la case <ident>Ouvrir dans l’éditeur</ident>, laissez le reste en l’état puis sur <ident>OK</ident>.</item>
+            <item>Cliquez sur <ident>Appliquer associé</ident> pour effectuer la transformation.</item>
+         </list>
+         <p>Une fois qu’il a été installé, ce scénario reste disponible chaque fois que vous lancez oXygen.</p>
+         <p>Notez bien qu’il faut ouvrir un fichier TEI XML valide avant de le lancer. Ensuite, la feuille de style fera l’analyse de tous les documents TEI XML retrouvés dans le même dossier.</p>
+         </div>
+      </body>
+   </text>
+</TEI>
