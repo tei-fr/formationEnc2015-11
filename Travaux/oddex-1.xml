@@ -1,5 +1,6 @@
 
 <schemaSpec ns="" start="book" ident="bookSchema">
+    
     <elementSpec ident="book">
         <desc>Elément racine d'un schéma simplissime pour encoder les livres</desc>
         <content>
@@ -16,6 +17,7 @@
             <textNode/>
         </content>
     </elementSpec>
+    
     <elementSpec ident="image">
         <desc>un élément vide qui pointe sur un fichier graphique</desc>
         <content/>
@@ -28,7 +30,5 @@
             </attDef>
         </attList>
     </elementSpec>
+    
 </schemaSpec>
-      
-            
-

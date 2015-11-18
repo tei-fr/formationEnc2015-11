@@ -18,58 +18,58 @@
    </teiHeader>
    <text>
       <body>
-         <p>Dans ce schéma simplissime, l'élément de racine s'appelle <gi>book</gi> et il peut contenir les éléments suivants:
-            <specList>
+         
+         <p>Dans ce schéma simplissime, l’élément de racine s’appelle <gi>book</gi> et il peut
+            contenir les éléments suivants : <specList>
                <specDesc key="para"/>
                <specDesc key="image" atts="href"/>
-            </specList></p>
-         
+            </specList>
+         </p>
+
          <schemaSpec ns="" start="book" ident="bookSchema">
             <classSpec ident="bookPart" type="model">
                <desc>éléments qui ont la possibilité de figurer dans un <gi>book</gi></desc>
             </classSpec>
-            
+
             <classSpec ident="pointing" type="atts">
                <desc>les membres de cette classe ont tous un attribut <att>href</att>
                </desc>
                <attList>
                   <attDef ident="href">
-                     <desc>fournit l' URI de l'objet ciblé</desc>
+                     <desc>fournit l’URI de l’objet ciblé</desc>
                      <datatype>
                         <rng:data xmlns:rng="http://relaxng.org/ns/structure/1.0" type="anyURI"/>
                      </datatype>
                   </attDef>
                </attList>
-               </classSpec>
-         
+            </classSpec>
+
             <elementSpec ident="book">
-                     <desc>Elément racine d'un schéma simplissime pour encoder les livres</desc>
-                    
-                        <content>
-                           <classRef key="bookPart" minOccurs="1" maxOccurs="unbounded"/>
-                        </content>
-                     
-                  </elementSpec>
-                  
-                  <elementSpec ident="para">
-                     <desc>une paragraph de text </desc>
-                     <classes>
-                        <memberOf key="bookPart"/>
-                     </classes>
-                     <content>
-                        <textNode/>
-                     </content>
-                  </elementSpec>
+               <desc>Elément racine d'un schéma simplissime pour encoder les livres</desc>
+               <content>
+                  <classRef key="bookPart" minOccurs="1" maxOccurs="unbounded"/>
+               </content>
+            </elementSpec>
+
+            <elementSpec ident="para">
+               <desc>une paragraph de text </desc>
+               <classes>
+                  <memberOf key="bookPart"/>
+               </classes>
+               <content>
+                  <textNode/>
+               </content>
+            </elementSpec>
+
+            <elementSpec ident="image">
+               <desc>un élément vide qui pointe sur un fichier graphique</desc>
+               <classes>
+                  <memberOf key="bookPart"/>
+                  <memberOf key="pointing"/>
+               </classes>
+               <content/>
+            </elementSpec>
             
-                  <elementSpec ident="image">
-                     <desc>un élément vide qui pointe sur un fichier graphique</desc>
-                     <classes>
-                        <memberOf key="bookPart"/>
-                        <memberOf key="pointing"/>                       
-                     </classes>
-                     <content/>                                     
-                  </elementSpec>
-              
          </schemaSpec>
       </body>
    </text>
