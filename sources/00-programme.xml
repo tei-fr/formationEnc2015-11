@@ -86,19 +86,19 @@
             <label>10h30-11h00</label>
             <item>Pause</item>
             <label>11-11h30</label>
-            <item>De quoi a-t-on besoin ?</item>
+            <item><ref target="talk-init-odd.pdf">De quoi a-t-on besoin ?</ref></item>
             <label>11h30-12h30</label>
-            <item>Mon premier schéma ODD (création schéma simple, complexifier, ODD)</item>
+            <item><ref target="talk-init-odd.pdf-">TP Mon premier schéma ODD</ref> (création schéma simple, complexifier, ODD)</item>
             <label>12h30-13h30</label>
             <item>Pause déjeuner</item>
             <label>14h-15h00</label>
-            <item>Le langage ODD</item>
+            <item><ref target="talk-init-odd.pdf">Le langage ODD</ref>, <ref target="oddbyexample.pdf">oddByExample</ref></item>
             <label>15h-15h30</label>
             <item>Pause</item>
             <label>15h30-16h00</label>
-            <item>TEI sous le capot</item>
+            <item><ref target="talk-teiodd.pdf">TEI sous le capot</ref></item>
             <label>16h-17h30</label>
-            <item>Pure ODD</item>
+            <item><ref target="talk-teiodd.pdf">Pure ODD</ref></item>
           </list>
         </div>
         <div rend="notes">

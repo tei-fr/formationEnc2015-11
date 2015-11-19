@@ -209,6 +209,17 @@
           </div>
         </div>
       </div>
+      <div rend="slide">
+        <head>Quelques outils</head>
+        <div><head>Image Markup Tool</head>
+          <p><ref target="http://www.tapor.uvic.ca/~mholmes/image_markup/">http://www.tapor.uvic.ca/~mholmes/image_markup/</ref></p>
+          <p>par Martin Holmes à l’université de Victoria</p>
+        </div>
+        <div>
+          <head>TILE: Text - Image Linking Environment</head>
+          <p><ref target="http://mith.umd.edu/tile/">http://mith.umd.edu/tile/</ref></p>
+        </div>
+      </div>
       <div>
         <div rend="title" xml:lang="fr">
           <head>...</head>
