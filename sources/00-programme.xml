@@ -118,32 +118,12 @@
         <div>
           <head><hi>3<hi rend="superscript">ème</hi></hi> journée</head>
           <list>
-            <item>Présentation de modules (survol sur tout ce qui est disponible, il
-                  y a probablement tt ce qu’il faut)</item>
-                <item>Création de vos propres schémas (exercice d’analyse à partir de vos propres
-                  sources = travail en binôme ou en groupe)</item>
-                <item>Travail sur les cas (mise en commun)</item>
-                <item>Créer un premier ODD avec Roma</item>
-            <item/>
-              </list>
-        </div>
-        <div rend="notes">
-          <note>Objectifs : Identifier ce qui est déjà dans la TEI, et modéliser
-            sa source. Arriver à une liste des éléments nécessaires pour son
-            schéma, identification des éléments disponibles et des lacunes
-            éventuelles de la TEI. Sélectionner les éléments utiles pour son
-            projet dans Roma. = un premier schéma personnalisé pour son projet
-            (TEI subset). Analyser le ODD et repérer sa syntaxe, comprendre son
-            implication.</note>
-          <note>Définir une liste de focus et les proposer : pointeurs, standoff markup, figures,
-            alignement images/text</note>
-          <list>
             <label>9h30-11h00</label>
-            <item>Modélisation ODD</item>
+            <item><ref target="talk-teiodd.pdf">Modélisation ODD</ref></item>
             <label>10h00-11h30</label>
             <item>Pause</item>
             <label>11h30-12h30</label>
-            <item>Travail en binôme : procédure (définir quelle est l’unité textuelle, quelle est la macrostructure du texte, quels sont les parties les plus significatives de vos documents, quels sont les objets qui correspondent à des p, quels sont les composants des p) Point de vue sur l’édition, objets d’intérêt.</item>
+            <item><ref target="06-atelier">Travail en binôme : procédure</ref> (définir quelle est l’unité textuelle, quelle est la macrostructure du texte, quels sont les parties les plus significatives de vos documents, quels sont les objets qui correspondent à des p, quels sont les composants des p) Point de vue sur l’édition, objets d’intérêt.</item>
             <label>12h30-13h30</label>
             <item>Pause déjeuner</item>
             <label>13h30-14h30</label>
@@ -163,6 +143,26 @@
             <label>17h00-17h30</label>
             <item>Construction de l’ODD</item>
           </list>
+        </div>
+        <div rend="notes">
+          <note><list>
+            <item>Présentation de modules (survol sur tout ce qui est disponible, il
+              y a probablement tt ce qu’il faut)</item>
+            <item>Création de vos propres schémas (exercice d’analyse à partir de vos propres
+              sources = travail en binôme ou en groupe)</item>
+            <item>Travail sur les cas (mise en commun)</item>
+            <item>Créer un premier ODD avec Roma</item>
+            <item/>
+          </list></note>
+          <note>Objectifs : Identifier ce qui est déjà dans la TEI, et modéliser
+            sa source. Arriver à une liste des éléments nécessaires pour son
+            schéma, identification des éléments disponibles et des lacunes
+            éventuelles de la TEI. Sélectionner les éléments utiles pour son
+            projet dans Roma. = un premier schéma personnalisé pour son projet
+            (TEI subset). Analyser le ODD et repérer sa syntaxe, comprendre son
+            implication.</note>
+          <note>Définir une liste de focus et les proposer : pointeurs, standoff markup, figures,
+            alignement images/text</note>
         </div>
       </div>
       <div rend="slide" xml:lang="fr">
