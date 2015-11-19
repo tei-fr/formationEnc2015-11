@@ -620,7 +620,7 @@ France
         <p>La feuille de style <ident>oddbyexample</ident> nous permet de générer un ODD à partir
           d’un corpus de documents TEI.</p>
         <list>
-          <item>Ouvrez n’importe quel fichier XML dans le dossier <ident>Cartes/XML</ident></item>
+          <item>Ouvrez n’importe quel fichier XML dans le dossier <ident>Cartes</ident></item>
           <item>Créez un nouveau Scénario de Transformation <ident>oddByExample</ident> et
             appliquez-le (voir document <ident>oddByExSetup.pdf</ident> pour plus de
             précisions)</item>
