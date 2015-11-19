@@ -33,8 +33,26 @@
     <body>
       <div rend="slide" xml:lang="fr">
         <div>
-          <head>Des composants tirés de différents modules</head>
-          <p></p>
+          <head>Travail en binôme 1</head>
+          <p><hi>Travailler successivement sur le projet de votre binôme. 11h30-12h30</hi></p>
+          <div>
+            <head>Définir les objets d’intérêt de votre édition, qu’est-ce qu’un texte pour vous ?</head>
+          </div>
+          <div>
+            <head>Quelle est l’unité textuelle</head>
+          </div>
+          <div>
+            <head>Quelle est la macrostructure du texte ?</head>
+          </div>
+          <div>
+            <head>Quels sont les parties les plus significatives de vos documents ?</head>
+          </div>
+          <div>
+            <head>Quels sont les objets qui correspondent à des <gi>p</gi> ?</head>
+          </div>
+          <div>
+            <head>Quels sont les sous-composants de <gi>p</gi> ?</head>
+          </div>
         </div>
       </div>
       <div>

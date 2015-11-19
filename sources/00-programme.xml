@@ -123,7 +123,7 @@
             <label>10h00-11h30</label>
             <item>Pause</item>
             <label>11h30-12h30</label>
-            <item><ref target="06-atelier">Travail en binôme : procédure</ref> (définir quelle est l’unité textuelle, quelle est la macrostructure du texte, quels sont les parties les plus significatives de vos documents, quels sont les objets qui correspondent à des p, quels sont les composants des p) Point de vue sur l’édition, objets d’intérêt.</item>
+            <item><ref target="06-atelier">Travail en binôme</ref></item>
             <label>12h30-13h30</label>
             <item>Pause déjeuner</item>
             <label>13h30-14h30</label>
@@ -163,6 +163,7 @@
             implication.</note>
           <note>Définir une liste de focus et les proposer : pointeurs, standoff markup, figures,
             alignement images/text</note>
+          <note>travail en binôme : (définir quelle est l’unité textuelle, quelle est la macrostructure du texte, quels sont les parties les plus significatives de vos documents, quels sont les objets qui correspondent à des p, quels sont les composants des p) Point de vue sur l’édition, objets d’intérêt.</note>
         </div>
       </div>
       <div rend="slide" xml:lang="fr">
