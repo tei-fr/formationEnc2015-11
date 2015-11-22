@@ -32,28 +32,42 @@
     </revisionDesc>
   </teiHeader>
   <text>
-    <body>
+    <body>emacs 
       <div xml:lang="fr">
         <head>Rappel : ODD est un langage conçu pour faciliter la documentation systématique des systèmes de
           documentation </head>
         <list type="gloss">
           <label><gi>code</gi></label>
-          <item>morceau de code exprimé en n’importe quel langage formel <eg>&lt;code>count =
-              56;&lt;/code> </eg></item>
+          <item>morceau de code exprimé en n’importe quel langage formel
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"><code>count += 56;</code></egXML></item>
           <label><gi>att</gi></label>
-          <item>nom d’attribut <att>target</att></item>
+          <item>nom d’attribut  <egXML xmlns="http://www.tei-c.org/ns/Examples">The <att>target</att> attribute indicates a URI</egXML></item>
           <label><gi>gi</gi></label>
-          <item>nom d’élément <gi>table</gi></item>
+          <item>nom d’élément <egXML xmlns="http://www.tei-c.org/ns/Examples">The <gi>table</gi> element is for...</egXML></item>
           <label><gi>ident</gi></label>
           <item>identifiant ou nom d’un objet en n’importe quel langage formel
-              <ident>$content</ident></item>
-          <label><gi>tag</gi></label>
-          <item>balise (spécifique à XML) <eg>&lt;tag>ptr
-              target="http://www.bbc.co.uk"/&lt;/tag></eg></item>
-          <label><gi>val</gi></label>
-          <item>valeur d’attribut <val>unknown</val></item>
+         <egXML xmlns="http://www.tei-c.org/ns/Examples">     The <ident>model.biblLike</ident> class 
+         </egXML> </item>
         </list>
       </div>
+      <div xml:lang="fr">
+        <list>
+                <label><gi>val</gi></label>
+          <item>valeur d’attribut <egXML xmlns="http://www.tei-c.org/ns/Examples">Cet attribut porte la valeur <val>unknown</val></egXML></item>
+          <label><gi>tag</gi></label>
+          <item>balise XML <egXML xmlns="http://www.tei-c.org/ns/Examples"> <ptr
+            target="http://www.bbc.co.uk"/></egXML></item>          
+        </list>
+        <p>Dans un ODD il est possible de regrouper des declarations pour faciliter leur exposition:
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <p>Nous n'utilisons que ces elements du module <ident>linking</ident>:
+          <specGrp xml:id="linkingElts">
+            <!-- quelques elementSpec etc -->
+          </specGrp>
+          </p>
+        </egXML></p>
+      <p>Ensuite, dans le <gi>schemaSpec</gi>, on integre ces declarations avec un <gi>specGrpRef</gi></p></div>
+      
       <div xml:lang="fr">
         <head>Contraintes de données avec Schematron </head>
         <list>
@@ -285,7 +299,7 @@
           <att>source</att> can also be used on <gi>classRef</gi>, <gi>elementRef</gi>,
             <gi>macroRef</gi>, and <gi>moduleRef</gi>.</p>
       </div>
-      <div xml:lang="en">
+      <div xml:lang="fr">
         <head>Usage de l’attribut <att>source</att></head>
         <p>L’attribut <att>source</att> sert à specifier la source des déclarations qu’on souhaite
           intégrer</p>
@@ -305,7 +319,7 @@
           <att>source</att> peut être utilisé sur <gi>classRef</gi>, <gi>elementRef</gi>,
             <gi>macroRef</gi>, et <gi>moduleRef</gi>.</p>
       </div>
-      <div xml:lang="en">
+      <div xml:lang="fr">
         <head>Enchainement des ODD</head>
         <p>L’opération <q>ODD to RELAX NG</q> comporte deux étapes (<q>odd to odd</q> suivi de
             <q>odd to relax</q>) ; pour crééer son propre base de personnalisation réutilisable il
@@ -317,7 +331,7 @@
           </item>
           <item>Avec OxGarage convertissez du format <q>ODD Document</q> vers <q>Compiled ODD
               Document</q></item>
-          <item>Avec oXygen générew une nouvelle transformation Ant ; utilisant la feuille XSLT
+          <item>Avec oXygen générez une nouvelle transformation Ant ; utilisant la feuille XSLT
               <ident>odd2odd.xsl</ident> et les options définis par
               <ident>stylesheets/odd/build-to.xml</ident></item>
         </list>
@@ -359,7 +373,7 @@
       </div>
       <div xml:lang="fr">
         <head>Addition des composants d’une schéma nonTEI</head>
-        <p>On souhaite utiliser l’élément TEI <gi>formula</gi> pour insérer du contenu exprimé en
+        <p>On souhaite utiliser l’élément TEI <gi>formula</gi> et y insérer du contenu exprimé en
           MathML : il faut donc :<list type="ordered">
             <item>inclure les composants du schéma MathML </item>
             <item>modifier le modèle de contenu de l’élément <gi>formula</gi></item>
@@ -619,12 +633,39 @@
       </div>
       <div xml:lang="en">
         <head>which gives us the chance to consider things like...</head>
-        <p><graphic url="vis.png"/></p>
+        <p><graphic url="../images/vis.png"/></p>
       </div>
       <div xml:lang="en">
         <head>Making your own dancing graphs</head>
         <p>There are a selection of force-directed graphs for TEI customizations available at <ptr
             target="http://tei.oucs.ox.ac.uk/Talks/2014-10-teimm-visualization/showviz.html"/>,
+          using CSV files which are generated by running the stylesheet <ptr
+            target="https://github.com/TEIC/Stylesheets/blob/master/tools/odd-to-csv.xsl"/> on a
+          compiled ODD.</p>
+      </div>
+      <div xml:lang="fr">
+        <head>D'autre ODD outputs</head>
+        <p>L'outillage actuele peut faiure sortir d'un ODD<list type="gloss">
+          <label>des schema</label>
+          <item>DTD, XSD, RELAX NG (XML and compact), ISO Schematron</item>
+          <label>de la documentation</label>
+          <item>HTML, LaTeX (and thence PDF), XSL FO, Word etc)</item>
+        </list> et en plus  <list type="gloss">
+          <label>JSON</label>
+          <item><code>odds/odd2json.xsl</code> produit un JSON definissant la structure de votre schema, 
+            pret a utiuliser avec un bibliotheseque Javascript</item>
+          
+        </list>
+        </p>
+      </div>
+      <div xml:lang="fr">
+        <head>ce qui permet des visualisations...</head>
+        <p><graphic url="../images/vis.png"/></p>
+      </div>
+      <div xml:lang="en">
+        <head>Making your own dancing graphs</head>
+        <p>There are a selection of force-directed graphs for TEI customizations available at <ptr
+          target="http://tei.oucs.ox.ac.uk/Talks/2014-10-teimm-visualization/showviz.html"/>,
           using CSV files which are generated by running the stylesheet <ptr
             target="https://github.com/TEIC/Stylesheets/blob/master/tools/odd-to-csv.xsl"/> on a
           compiled ODD.</p>
