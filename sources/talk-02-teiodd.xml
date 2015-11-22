@@ -93,8 +93,8 @@
         <p>Il ne faut pas confondre l'organisation physique (en fichiers) avec l'organisation
           logique (en spécifications etc.)</p>
         <list>
-          <item>Le fichier <ident>guidelines-XX.xml</ident> est <soCalled>la</soCalled> la source des
-            Guidelines pour la langue XX.</item>
+          <item>Le fichier <ident>guidelines-XX.xml</ident> est <soCalled>la</soCalled> la source
+            des Guidelines pour la langue XX.</item>
           <item>Mis à part quelques liminaires (un TEI Header, la page de titre, etc.), il contient
             plusieurs lignes comme ceci : <egXML rend="tiny"
               xmlns="http://www.tei-c.org/ns/Examples">&lt;include
@@ -279,7 +279,8 @@
       <div xml:lang="en">
         <head>A datatype specification</head>
         <list>
-          <item>Datatypes are currently represented as macros of a specific type. This will change .</item>
+          <item>Datatypes are currently represented as macros of a specific type. This will change
+            .</item>
           <item>The <gi>content</gi> element maps this datatype to another, in this case
               <code>data.word</code></item>
           <item>Ultimately, all TEI datatypes map to one or more of <list>
@@ -295,7 +296,8 @@
         <head>Spécification d'un datatype</head>
 
         <list>
-          <item>A présent, nous représentons les types de données en utilisant des macros : cela change au prochain release </item>
+          <item>A présent, nous représentons les types de données en utilisant des macros : cela
+            change au prochain release </item>
           <item>Le développement de la macro est fournie par l'élément <gi>content</gi> : ici, par
             référence à une autre macro <code>data.word</code></item>
           <item>En effet, tous les datatypes TEI(sauf 2) sont mappés sur <list>
@@ -307,11 +309,11 @@
             permettant n'importe quelle séquence de lettres, chiffres, et caractères de ponctuation
             sans espaces </item>
         </list>
-        <p rend="box">Le système Pure ODD dispose d'un élément <gi>dataSpec</gi> pour fournir de telles définitions; il est complété 
-        par l'élément <gi>dataRef</gi></p>
+        <p rend="box">Le système Pure ODD dispose d'un élément <gi>dataSpec</gi> pour fournir de
+          telles définitions; il est complété par l'élément <gi>dataRef</gi></p>
       </div>
-      
-      
+
+
       <div xml:lang="en">
         <head>A model class specification</head>
         <p rend="box">Open <ident>model.biblLike.xml</ident> with oXygen</p>
@@ -375,8 +377,8 @@
         <head>Spécification d'une classe d'attribut</head>
         <p rend="box">Ouvrez <ident>att.divLike.xml</ident> avec oXygen </p>
         <list>
-          <item>On vous recommande d'ouvrir la vue Sommaire (Fenêtre->Afficher la
-            vue->Sommaire) si besoin est pour visualiser la structure</item>
+          <item>On vous recommande d'ouvrir la vue Sommaire (Fenêtre->Afficher la vue->Sommaire) si
+            besoin est pour visualiser la structure</item>
           <item>La liste des attributs fournis par cette classe est specifiée dans un
               <gi>attList</gi>, qui contient deux <gi>attDef</gi> (<att>org</att> et
               <att>uniform</att>)</item>
@@ -390,7 +392,8 @@
               <ident>att.fragmentable</ident>) : si ces classes sont disponibles, les attributs
             qu'elles fournissent seront donc également disponibles.</item>
         </list>
-        <p rend="box">Le systeme Pure ODD utilise un <gi>dataRef</gi> comme contenu du <gi>datatype</gi></p>
+        <p rend="box">Le systeme Pure ODD utilise un <gi>dataRef</gi> comme contenu du
+            <gi>datatype</gi></p>
       </div>
       <div xml:lang="en">
         <head>A macro specification</head>
@@ -408,18 +411,16 @@
           <item>Une macro, comme un datatype, fournit une abréviation conventionnelle pour des
             objets souvent utilisés ; dans ce cas, un modèle de contenu.</item>
           <item>Dans cette version de P5, les modèles de contenu sont exprimés en RELAX NG. Dans la
-            version <ident>pureODD</ident> ils sont exprimés en ODD.
-          </item>
-                 </list>
-      <egXML xmlns="http://www.tei-c.org/ns/Examples">
-        <alternate minOccurs="0" maxOccurs="unbounded">
-          <textNode/>
-          <classRef key="model.gLike"/>
-          <classRef key="model.phrase"/>
-          <classRef key="model.global"/>
-        </alternate>
-        
-      </egXML>
+            version <ident>pureODD</ident> ils sont exprimés en ODD. </item>
+        </list>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <alternate minOccurs="0" maxOccurs="unbounded">
+            <textNode/>
+            <classRef key="model.gLike"/>
+            <classRef key="model.phrase"/>
+            <classRef key="model.global"/>
+          </alternate>
+        </egXML>
       </div>
       <div xml:lang="en">
         <head>An element specification</head>
@@ -478,7 +479,7 @@
         <list>
           <item>une classe d'attribut comme <ident>att.global</ident> fournit des attributs</item>
           <item>une classe de modélisation comme <ident>model.profileDescPart</ident> regroupe des
-            éléments selon leur sémantique, ou leur possibilités de positionnement  : <list>
+            éléments selon leur sémantique, ou leur possibilités de positionnement : <list>
               <item>model.xxxLike : resemble à un xxx</item>
               <item>model.xxxPart : constitue un xxx</item>
             </list>
@@ -533,7 +534,7 @@
           <item> en tant que membre de <ident>att.responsibility</ident>, il hérite des attributs
               <att>cert</att> et <att>resp</att></item>
           <item><ident>att.responsibility</ident> lui transmet également l'attribut
-            <att>source</att>, parce qu'elle est <soCalled>memberOf</soCalled> de la classe
+              <att>source</att>, parce qu'elle est <soCalled>memberOf</soCalled> de la classe
               <ident>att.source</ident></item>
         </list>
       </div>
@@ -555,7 +556,8 @@
           <item>Actuellement, la TEI se sert du langage RELAX NG pour définir le contenu ("content
             model") des éléments et des attributs </item>
           <item>(A l'époque, c'était du SGML DTD)</item>
-          <item>Dans pureODD, on remplace cela avec des éléments ODD, comme vous l'avez déjà vu</item>
+          <item>Dans pureODD, on remplace cela avec des éléments ODD, comme vous l'avez déjà
+            vu</item>
           <item>pureODD est compris dans les versions TEI P5 depuis 2.6.0 (dec 2013), mais on est
             toujours en phase beta test. </item>
           <item>Pure ODD est plus expressif que DTD ou XSD</item>
@@ -596,7 +598,7 @@
           <content><alternate maxOccurs="unbounded"><classRef key="model.pLike"/><classRef
                 key="model.listLike"/></alternate></content>
         </egXML>
-    <!--    <p rend="box">Voir <ref target="reviewingODD.pdf">Burnard et Rahtz 2013</ref> pour les
+        <!--    <p rend="box">Voir <ref target="reviewingODD.pdf">Burnard et Rahtz 2013</ref> pour les
           détails</p>-->
       </div>
       <div xml:lang="en">
@@ -675,9 +677,9 @@
       <div xml:lang="fr">
         <!-- no eng equiv -->
         <head>Exemples</head>
-        <p>Un exemple vaut un million de mots... mais ce n'est pas évident de savoir comment intégrer un
-          exemple XML dans un document XML : surtout si on souhaite le valider en même temps.
-          Plusieurs démarches sont possibles : <list>
+        <p>Un exemple vaut un million de mots... mais ce n'est pas évident de savoir comment
+          intégrer un exemple XML dans un document XML : surtout si on souhaite le valider en même
+          temps. Plusieurs démarches sont possibles : <list>
             <item>on représente les chevrons par des entités (&amp;lt; etc) : mais la source devient
               illisible et pas validable</item>
             <item>on englobe tout dans un CDATA marked section <code>&lt;![CDATA[&lt;p>comme
@@ -687,18 +689,19 @@
             </item>
           </list></p>
         <p>Les expressions du namespace <code>http://www.tei-c.org/ns/Examples</code> sont validées
-          par un schéma spécial, qui permet tout élément TEI comme racine, en utilisant
-          le validateur onvdl.</p>
+          par un schéma spécial, qui permet tout élément TEI comme racine, en utilisant le
+          validateur onvdl.</p>
       </div>
 
       <div xml:lang="fr">
         <!-- no eng equiv -->
         <head>Contraintes des contenus</head>
-        <p>Le modèle de contenu n'est que l'une des manières de restreindre ce qui est permis dans un
-          document. On peut aussi exprimer une contrainte ...</p>
+        <p>Le modèle de contenu n'est que l'une des manières de restreindre ce qui est permis dans
+          un document. On peut aussi exprimer une contrainte ...</p>
         <list>
           <item>par référence à un élément <gi>valList</gi>... </item>
-          <item>par reference à un élément <gi>dataSpec</gi>  </item>
+          <item>par reference à un élément <gi>dataSpec</gi>
+          </item>
           <item>par inclusion des éléments <gi>constraintSpec</gi> (expression en ISO schématron)
           </item>
         </list>
@@ -707,8 +710,8 @@
       <div xml:lang="fr">
         <!-- no eng equiv -->
         <head>Spécification des listes de valeurs</head>
-        <p>Les valeurs possibles d'un attribut peuvent être spécifiées par un <gi>datatype</gi> et/ou
-          par <gi>valList</gi>. </p>
+        <p>Les valeurs possibles d'un attribut peuvent être spécifiées par un <gi>datatype</gi>
+          et/ou par <gi>valList</gi>. </p>
         <p>Un besoin assez commun est de spécifier une <term>énumération</term> (une liste - ouverte
           ou fermée - de valeurs) <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
             <attDef ident="status">
@@ -756,8 +759,8 @@
             etc. par ex des contraintes contextuelles ou concurrentielles</item>
           <item>le traitement de ces règles nécessite une étape additionnelle dans la validation des
             documents</item>
-          <item>mais cela est possible avec la version courante d'oXygen (si votre schéma s'exprime en
-            RELAX NG et si vos contraintes s'expriment en ISO schematron.</item>
+          <item>mais cela est possible avec la version courante d'oXygen (si votre schéma s'exprime
+            en RELAX NG et si vos contraintes s'expriment en ISO schematron.</item>
         </list>
 
       </div>
@@ -856,12 +859,14 @@
           schéma: qu'il soit vierge, ou personnalisé. </p>
         <list>
           <item>L'attribut <att>ident</att> obligatoire fournit un nom pour le schéma</item>
-          <item>L'attribut <att>start</att> indique le ou les noms des élément(s) racine(s) du schéma </item>
-          <item>L'attribut <att>source</att> indique l'emplacement de la source TEI dans le cas d'une
-            personnalisation (par ex une version spécifique de TEI P5) </item>
+          <item>L'attribut <att>start</att> indique le ou les noms des élément(s) racine(s) du
+            schéma </item>
+          <item>L'attribut <att>source</att> indique l'emplacement de la source TEI dans le cas
+            d'une personnalisation (par ex une version spécifique de TEI P5) </item>
           <item>Les attributs <att>docLang</att> et <att>targetLang</att> permettent la sélection
             des langues à utiliser pour les descriptions d'éléments et pour les noms d'élément
-            respectivement, en supposant la présence dans cette source des traductions requises</item>
+            respectivement, en supposant la présence dans cette source des traductions
+            requises</item>
         </list>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
           <schemaSpec start="TEI" ident="testschema" source="tei:1.5.0" docLang="fr">
@@ -902,8 +907,8 @@
       </div>
       <div xml:lang="fr">
         <head>Selection par exclusion</head>
-        <p> Vous pouvez spécifier les éléments que vous souhaitez supprimer parmi ceux 
-          proposés par un module : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+        <p> Vous pouvez spécifier les éléments que vous souhaitez supprimer parmi ceux proposés par
+          un module : <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <schemaSpec start="TEI" ident="testschema">
               <moduleRef key="core" except="mentioned quote said"/>
               <moduleRef key="header"/>
@@ -1000,7 +1005,7 @@
           </item>
           <item>Chaque <gi>ab</gi> ne permet qu'une séquence d'éléments <gi>s</gi></item>
           <item>Chaque <gi>s</gi> est composé d'éléments <gi>w</gi> et <gi>pc</gi> elements. </item>
-          <item>et nous souhaitons supprimer la majorité  des attributs, en gardant notamment
+          <item>et nous souhaitons supprimer la majorité des attributs, en gardant notamment
               <att>xml:id</att>, <att>xml:lang</att>, <att>type</att>, <att>subtype</att>
           </item>
         </list>
@@ -1027,6 +1032,24 @@
           <item>Vérifiez les éléments et les attributs disponibles </item>
         </list>
       </div>
+      <div xml:lang="en">
+       
+        <head>A more advanced exercise</head>
+        
+        <p>Now try to make the feather schema even lighter... </p>
+        <list>
+          <item>Suppress all the global attributes except for <att>style</att>
+            <att>xml:id</att> and <att>xml:lang</att>: attention ! you need to look at two classes :
+            <ident>att.global</ident> and <ident>att.global.rendition</ident></item>
+          <item>Add the <gi>span</gi> element and check that its schematron constraints are effective
+            </item>
+          <item>Add a new element <gi>mw</gi> at the same level as <gi>w</gi> for encoding multiword units such as "of course" </item>
+          <item>Modify the content of <gi>s</gi> to permit just <gi>w</gi> or <gi>mw</gi> elements</item>
+           <item>Remove the element <gi>title</gi> from the body without removing it from the header</item>
+        </list>
+        <p rend="box">My suggestion is available in the file <ident>feather-final</ident> ...
+        </p>
+      </div>
       <div xml:lang="fr">
         <!-- no eng equiv -->
         <head>Exercice un peu plus avancé</head>
@@ -1034,12 +1057,14 @@
         <p>Continuons de personnaliser le schéma feather... </p>
         <list>
           <item>Supprimez tous les attributs globaux sauf <att>style</att>
-            <att>xml:id</att> et <att>xml:lang</att></item>
-           <item>Ajoutez l'élément <gi>span</gi> et assurez vous que ces règles schematron sont prises en
-compte dans votre schéma </item>
-          <item>Modifiez le contenu de <gi>s</gi> pour ne permettre que des <gi>w</gi></item>
-          <item>Ajouter un nouveau élément <gi>mw</gi> pour les séquences de mots</item>
-          <item>Supprimez l'élément <gi>title</gi> du body, mais non pas du Header</item>
+            <att>xml:id</att> et <att>xml:lang</att>: attention ! il faut considérer deux classes :
+              <ident>att.global</ident>, et <ident>att.global.rendition</ident></item>
+          <item>Ajoutez l'élément <gi>span</gi> et assurez vous que ces règles schematron sont
+            prises en compte dans votre schéma </item>
+          <item>Ajouter un nouveau élément <gi>mw</gi> au meme niveau que <gi>w</gi> pour les
+            séquences de mots tels que "of course" </item>
+          <item>Modifiez le contenu de <gi>s</gi> pour ne permettre que des <gi>w</gi> ou des <gi>mw</gi></item>
+           <item>Supprimez l'élément <gi>title</gi> du body, mais non pas du Header</item>
         </list>
         <p rend="box">Ma proposition est disponible dans le fichier <ident>feather-final</ident> ...
         </p>
@@ -1065,8 +1090,8 @@ compte dans votre schéma </item>
       <div xml:lang="fr">
         <head>Etre conforme à la TEI veut dire quoi?</head>
         <list>
-          <item><label>être honnête</label> : Les éléments XML qui sont déclarés comme appartenant au
-            namespace TEI doivent respecter les définitions TEI de ces éléments</item>
+          <item><label>être honnête</label> : Les éléments XML qui sont déclarés comme appartenant
+            au namespace TEI doivent respecter les définitions TEI de ces éléments</item>
           <item><label>être explicite</label> : Pour valider un document TEI, un ODD est fortement
             conseillé, parce que cela mettra en évidence toutes les modifications effectuées.</item>
         </list>
